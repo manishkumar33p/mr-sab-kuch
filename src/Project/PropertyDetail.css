@@ -1,0 +1,88 @@
+.property-detail {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+.back-btn {
+  padding: 10px 18px;
+  border: none;
+  background: #ff6600;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.detail-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.detail-content {
+  margin-top: 25px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-price {
+  color: #ff6600;
+  margin: 15px 0;
+}
+
+.status {
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: white;
+}
+
+.available {
+  background: green;
+}
+
+.occupied {
+  background: red;
+}
+
+.detail-info {
+  margin: 20px 0;
+}
+
+.detail-info p {
+  margin: 10px 0;
+}
+
+.description-box {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.action-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.call-btn,
+.whatsapp-btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  color: white;
+}
+
+.call-btn {
+  background: #007bff;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+}

@@ -1,0 +1,1519 @@
+/* =========================================
+   NISS LAUNDRY SERVICES
+========================================= */
+
+.laundry-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f8fc;
+  color: #102a56;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.laundry-hero {
+  position: relative;
+  min-height: 620px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.laundry-hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.laundry-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(2, 23, 58, 0.94) 0%,
+      rgba(4, 48, 105, 0.82) 45%,
+      rgba(0, 21, 53, 0.58) 100%
+    );
+}
+
+.laundry-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 92%;
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 60px;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.laundry-hero-left {
+  color: white;
+}
+
+.laundry-tag {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+
+.laundry-hero-left h1 {
+  margin: 0;
+  font-size: clamp(42px, 5vw, 70px);
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.laundry-hero-left h1 span {
+  display: block;
+  color: #3d91ff;
+}
+
+.laundry-hero-left > p {
+  max-width: 700px;
+  margin: 25px 0;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #e9f1ff;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.laundry-search-box {
+  width: 100%;
+  max-width: 700px;
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.laundry-search-box select,
+.laundry-search-box input {
+  height: 52px;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+.laundry-search-box select {
+  width: 180px;
+  background: #f3f6fa;
+  border-radius: 9px;
+  color: #183a6b;
+}
+
+.laundry-search-box input {
+  flex: 1;
+  min-width: 0;
+}
+
+.laundry-search-box button {
+  border: none;
+  padding: 0 22px;
+  border-radius: 10px;
+  background: #ff6a00;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.laundry-search-box button:hover {
+  background: #e85800;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.laundry-hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.laundry-primary-btn,
+.laundry-secondary-btn {
+  padding: 14px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.laundry-primary-btn {
+  background: #ff6a00;
+  color: white;
+}
+
+.laundry-primary-btn:hover {
+  transform: translateY(-3px);
+}
+
+.laundry-secondary-btn {
+  background: white;
+  color: #123b78;
+}
+
+.laundry-secondary-btn:hover {
+  background: #eaf3ff;
+}
+
+
+/* =========================================
+   HERO RIGHT
+========================================= */
+
+.laundry-hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.laundry-stat-card {
+  width: 100%;
+  max-width: 360px;
+  padding: 35px;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+}
+
+.stat-icon {
+  width: 85px;
+  height: 85px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #ff6a00;
+  font-size: 40px;
+}
+
+.laundry-stat-card h3 {
+  margin: 22px 0 10px;
+  font-size: 25px;
+}
+
+.laundry-stat-card p {
+  color: #e7effc;
+  line-height: 1.6;
+}
+
+.laundry-small-stats {
+  width: 100%;
+  max-width: 390px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.laundry-small-stats div {
+  padding: 17px 10px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.laundry-small-stats strong {
+  display: block;
+  font-size: 22px;
+  color: #ff8b3d;
+}
+
+.laundry-small-stats span {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.laundry-message {
+  position: fixed;
+  z-index: 9999;
+  top: 90px;
+  right: 25px;
+  padding: 15px 22px;
+  border-radius: 10px;
+  color: white;
+  background: #123e7b;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.laundry-services-section {
+  width: 92%;
+  max-width: 1250px;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.laundry-section-heading {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.laundry-section-heading > span {
+  height: 2px;
+  background: #2775c9;
+}
+
+.laundry-section-heading small {
+  color: #ff6a00;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.laundry-section-heading h2 {
+  margin: 8px 0;
+  font-size: 35px;
+  color: #0d3670;
+}
+
+.laundry-section-heading p {
+  margin: 0;
+  color: #64748b;
+}
+
+
+/* =========================================
+   FILTER
+========================================= */
+
+.laundry-filter-bar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.laundry-filter-bar input,
+.laundry-filter-bar select {
+  height: 50px;
+  border: 1px solid #d8e1ed;
+  background: white;
+  border-radius: 9px;
+  outline: none;
+  padding: 0 16px;
+  font-size: 15px;
+  color: #173b6d;
+}
+
+.laundry-filter-bar input {
+  flex: 1;
+}
+
+.laundry-filter-bar select {
+  width: 220px;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.laundry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.laundry-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e1e8f0;
+  box-shadow: 0 7px 25px rgba(26, 65, 110, 0.08);
+  transition: 0.3s;
+}
+
+.laundry-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 35px rgba(26, 65, 110, 0.16);
+}
+
+.laundry-image-wrapper {
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+}
+
+.laundry-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.laundry-card:hover img {
+  transform: scale(1.07);
+}
+
+.laundry-category {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #123e7b;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.laundry-card-content {
+  padding: 20px;
+}
+
+.laundry-card-content h3 {
+  margin: 0;
+  color: #123b72;
+  font-size: 18px;
+}
+
+.laundry-card-content p {
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.5;
+  min-height: 40px;
+}
+
+.laundry-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.laundry-card-bottom small {
+  display: block;
+  color: #8995a5;
+  font-size: 10px;
+}
+
+.laundry-card-bottom strong {
+  font-size: 21px;
+  color: #ff6500;
+}
+
+.laundry-card-bottom button {
+  border: none;
+  padding: 11px 15px;
+  border-radius: 7px;
+  background: #123e7b;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.laundry-card-bottom button:hover {
+  background: #ff6500;
+}
+
+.laundry-no-result {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.laundry-features {
+  width: 92%;
+  max-width: 1250px;
+  margin: 0 auto 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.laundry-feature {
+  text-align: center;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 15px;
+  border: 1px solid #e1e8f0;
+}
+
+.laundry-feature > div {
+  font-size: 35px;
+}
+
+.laundry-feature h3 {
+  color: #123b72;
+  margin: 12px 0 8px;
+}
+
+.laundry-feature p {
+  margin: 0;
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   WHY CHOOSE
+========================================= */
+
+.laundry-why {
+  width: 92%;
+  max-width: 1250px;
+  margin: 0 auto 80px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 30px;
+}
+
+.laundry-why-content {
+  padding: 45px;
+  border-radius: 20px;
+  background: #0c3670;
+  color: white;
+}
+
+.laundry-mini-title {
+  color: #ff7b22;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.laundry-why h2 {
+  margin: 12px 0;
+  font-size: 40px;
+}
+
+.laundry-why h2 span {
+  color: #4da0ff;
+}
+
+.laundry-why-content > p {
+  max-width: 700px;
+  color: #d9e6f8;
+  line-height: 1.7;
+}
+
+.laundry-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.laundry-benefits div {
+  padding: 15px 10px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.laundry-benefits strong {
+  display: block;
+  color: #ff7b22;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.laundry-benefits span {
+  font-size: 12px;
+}
+
+.laundry-contact-card {
+  padding: 45px;
+  border-radius: 20px;
+  background:
+    linear-gradient(
+      135deg,
+      #eaf4ff,
+      #cfe5ff
+    );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.laundry-contact-card > span {
+  color: #ff6500;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.laundry-contact-card h2 {
+  color: #103b75;
+  font-size: 38px;
+}
+
+.laundry-contact-card p {
+  color: #5d6d82;
+  line-height: 1.7;
+}
+
+.laundry-contact-card a {
+  width: fit-content;
+  margin-top: 12px;
+  padding: 13px 20px;
+  border-radius: 8px;
+  background: #123e7b;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.laundry-contact-card a:hover {
+  background: #ff6500;
+}
+
+
+/* =========================================
+   MODAL
+========================================= */
+
+.laundry-modal-overlay {
+  position: fixed;
+  z-index: 99999;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(4, 20, 45, 0.75);
+  backdrop-filter: blur(5px);
+}
+
+.laundry-modal {
+  width: 100%;
+  max-width: 850px;
+  max-height: 92vh;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.laundry-close {
+  position: absolute;
+  z-index: 5;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  color: #173b6d;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modal-image {
+  min-height: 500px;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-content {
+  padding: 35px;
+}
+
+.modal-content > span {
+  color: #ff6500;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.modal-content h2 {
+  color: #123b72;
+  margin: 8px 0;
+  font-size: 28px;
+}
+
+.modal-price {
+  color: #ff6500;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 7px;
+  color: #304d70;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.quantity-box {
+  display: flex;
+  width: 140px;
+  height: 42px;
+  border: 1px solid #d5dfeb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.quantity-box button {
+  width: 42px;
+  border: none;
+  background: #edf4fb;
+  color: #123e7b;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.quantity-box strong {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content > input,
+.modal-content > textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d5dfeb;
+  border-radius: 8px;
+  padding: 12px;
+  outline: none;
+  font-family: inherit;
+}
+
+.modal-content > input {
+  height: 45px;
+}
+
+.modal-content > textarea {
+  height: 90px;
+  resize: none;
+}
+
+.modal-total {
+  margin-top: 22px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: #f1f6fc;
+}
+
+.modal-total strong {
+  color: #ff6500;
+  font-size: 21px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.modal-cancel,
+.modal-confirm {
+  flex: 1;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.modal-cancel {
+  background: #edf1f5;
+  color: #354a63;
+}
+
+.modal-confirm {
+  background: #ff6500;
+  color: white;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .laundry-hero-content {
+    grid-template-columns: 1fr;
+    padding: 80px 0;
+  }
+
+  .laundry-hero-right {
+    display: none;
+  }
+
+  .laundry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .laundry-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .laundry-why {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .laundry-hero {
+    min-height: 650px;
+  }
+
+  .laundry-hero-content {
+    width: 90%;
+    padding: 65px 0;
+  }
+
+  .laundry-hero-left h1 {
+    font-size: 39px;
+  }
+
+  .laundry-hero-left > p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .laundry-search-box {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .laundry-search-box select,
+  .laundry-search-box input,
+  .laundry-search-box button {
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+  }
+
+  .laundry-hero-buttons {
+    flex-direction: column;
+  }
+
+  .laundry-primary-btn,
+  .laundry-secondary-btn {
+    width: 100%;
+  }
+
+  .laundry-services-section {
+    width: 92%;
+    padding: 55px 0;
+  }
+
+  .laundry-section-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .laundry-section-heading > span {
+    display: none;
+  }
+
+  .laundry-section-heading h2 {
+    font-size: 28px;
+  }
+
+  .laundry-filter-bar {
+    flex-direction: column;
+  }
+
+  .laundry-filter-bar select {
+    width: 100%;
+  }
+
+  .laundry-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .laundry-image-wrapper {
+    height: 220px;
+  }
+
+  .laundry-features {
+    width: 92%;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  .laundry-feature {
+    padding: 22px 10px;
+  }
+
+  .laundry-feature h3 {
+    font-size: 15px;
+  }
+
+  .laundry-feature p {
+    font-size: 11px;
+  }
+
+  .laundry-why {
+    width: 92%;
+    margin-bottom: 50px;
+    gap: 15px;
+  }
+
+  .laundry-why-content,
+  .laundry-contact-card {
+    padding: 28px 22px;
+  }
+
+  .laundry-why h2 {
+    font-size: 32px;
+  }
+
+  .laundry-contact-card h2 {
+    font-size: 30px;
+  }
+
+  .laundry-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .laundry-modal {
+    grid-template-columns: 1fr;
+    max-height: 94vh;
+  }
+
+  .modal-image {
+    min-height: 190px;
+    height: 190px;
+  }
+
+  .modal-content {
+    padding: 25px 20px;
+  }
+
+  .laundry-message {
+    top: 75px;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .laundry-hero-left h1 {
+    font-size: 34px;
+  }
+
+  .laundry-features {
+    grid-template-columns: 1fr;
+  }
+
+  .laundry-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .laundry-card-bottom {
+    align-items: flex-end;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   MOBILE BOOKING MODAL FIX
+========================================================= */
+
+.laundry-modal-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px;
+  box-sizing: border-box;
+
+  overflow-y: auto;
+  z-index: 99999;
+}
+
+
+/* MODAL */
+
+.laundry-modal {
+  width: min(900px, 100%);
+  max-width: 900px;
+
+  max-height: calc(100dvh - 32px);
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+
+  border-radius: 22px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .laundry-modal-overlay {
+    align-items: flex-start;
+
+    padding: 12px;
+
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+  .laundry-modal {
+    width: 100%;
+    max-width: 100%;
+
+    max-height: calc(100dvh - 24px);
+
+    margin: 0 auto;
+
+    border-radius: 18px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+
+  /* IMAGE */
+
+  .laundry-modal .modal-image {
+    width: 100%;
+    height: 180px;
+
+    flex-shrink: 0;
+  }
+
+  .laundry-modal .modal-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+  }
+
+
+  /* CONTENT */
+
+  .laundry-modal .modal-content {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 20px 16px 22px;
+  }
+
+
+  .laundry-modal .modal-content h2 {
+    font-size: 22px;
+    line-height: 1.25;
+
+    margin: 8px 0;
+  }
+
+
+  .laundry-modal .modal-content p {
+    margin: 6px 0 14px;
+  }
+
+
+  /* CLOSE BUTTON */
+
+  .laundry-close {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    width: 38px;
+    height: 38px;
+
+    z-index: 10;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+  }
+
+
+  /* INPUTS */
+
+  .laundry-modal input,
+  .laundry-modal textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    font-size: 16px;
+
+    padding: 12px;
+  }
+
+
+  .laundry-modal textarea {
+    min-height: 90px;
+    resize: vertical;
+  }
+
+
+  /* QUANTITY */
+
+  .quantity-box {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+  }
+
+
+  .quantity-box button {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+  }
+
+
+  /* TOTAL */
+
+  .laundry-modal .modal-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 18px 0;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+  }
+
+
+  /* ACTION BUTTONS */
+
+  .laundry-modal .modal-actions {
+    display: flex;
+
+    gap: 10px;
+
+    width: 100%;
+  }
+
+
+  .laundry-modal .modal-actions button {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 13px 10px;
+
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .laundry-modal-overlay {
+    padding: 8px;
+  }
+
+
+  .laundry-modal {
+    max-height: calc(100dvh - 16px);
+
+    border-radius: 15px;
+  }
+
+
+  .laundry-modal .modal-image {
+    height: 140px;
+  }
+
+
+  .laundry-modal .modal-content {
+    padding: 16px 13px 18px;
+  }
+
+
+  .laundry-modal .modal-content h2 {
+    font-size: 19px;
+  }
+
+
+  .laundry-modal .modal-actions {
+    flex-direction: column;
+  }
+
+
+  .laundry-modal .modal-actions button {
+    width: 100%;
+  }
+
+}
+
+
+
+/* =========================================================
+   MOBILE BOOKING MODAL FIX
+========================================================= */
+
+.laundry-modal-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px;
+  box-sizing: border-box;
+
+  overflow-y: auto;
+  z-index: 99999;
+}
+
+
+/* MODAL */
+
+.laundry-modal {
+  width: min(900px, 100%);
+  max-width: 900px;
+
+  max-height: calc(100dvh - 32px);
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+
+  border-radius: 22px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .laundry-modal-overlay {
+    align-items: flex-start;
+
+    padding: 12px;
+
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+  .laundry-modal {
+    width: 100%;
+    max-width: 100%;
+
+    max-height: calc(100dvh - 24px);
+
+    margin: 0 auto;
+
+    border-radius: 18px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+
+  /* IMAGE */
+
+  .laundry-modal .modal-image {
+    width: 100%;
+    height: 180px;
+
+    flex-shrink: 0;
+  }
+
+  .laundry-modal .modal-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+  }
+
+
+  /* CONTENT */
+
+  .laundry-modal .modal-content {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 20px 16px 22px;
+  }
+
+
+  .laundry-modal .modal-content h2 {
+    font-size: 22px;
+    line-height: 1.25;
+
+    margin: 8px 0;
+  }
+
+
+  .laundry-modal .modal-content p {
+    margin: 6px 0 14px;
+  }
+
+
+  /* CLOSE BUTTON */
+
+  .laundry-close {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    width: 38px;
+    height: 38px;
+
+    z-index: 10;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+  }
+
+
+  /* INPUTS */
+
+  .laundry-modal input,
+  .laundry-modal textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    font-size: 16px;
+
+    padding: 12px;
+  }
+
+
+  .laundry-modal textarea {
+    min-height: 90px;
+    resize: vertical;
+  }
+
+
+  /* QUANTITY */
+
+  .quantity-box {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+  }
+
+
+  .quantity-box button {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+  }
+
+
+  /* TOTAL */
+
+  .laundry-modal .modal-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 18px 0;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+  }
+
+
+  /* ACTION BUTTONS */
+
+  .laundry-modal .modal-actions {
+    display: flex;
+
+    gap: 10px;
+
+    width: 100%;
+  }
+
+
+  .laundry-modal .modal-actions button {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 13px 10px;
+
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .laundry-modal-overlay {
+    padding: 8px;
+  }
+
+
+  .laundry-modal {
+    max-height: calc(100dvh - 16px);
+
+    border-radius: 15px;
+  }
+
+
+  .laundry-modal .modal-image {
+    height: 140px;
+  }
+
+
+  .laundry-modal .modal-content {
+    padding: 16px 13px 18px;
+  }
+
+
+  .laundry-modal .modal-content h2 {
+    font-size: 19px;
+  }
+
+
+  .laundry-modal .modal-actions {
+    flex-direction: column;
+  }
+
+
+  .laundry-modal .modal-actions button {
+    width: 100%;
+  }
+
+}

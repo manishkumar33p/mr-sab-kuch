@@ -1,0 +1,36 @@
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+  
+  .sidebar h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  
+  .filter-category,
+  .filter-price {
+    margin-bottom: 20px;
+  }
+  
+  .filter-category select,
+  .filter-price select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .filter-category h4,
+  .filter-price h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  

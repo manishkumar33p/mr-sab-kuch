@@ -1,0 +1,555 @@
+/* DataEntry.css */
+
+.data-entry-page {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+.page-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    margin-top: 2em;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+}
+
+.table th, .table td {
+    padding: 15px;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+}
+
+.table input {
+    width: 100%;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* DataEntry.css */
+.data-entry-page {
+    padding: 20px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Ensure the form and table are centered and responsive */
+/* .container {
+    max-width: 100%;
+} */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table input, .table select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+.btn {
+    margin: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .table th, .table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+        display: block;
+        border: 1px solid #ddd;
+    }
+
+    .table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 10px;
+    }
+}
+
+/* DataEntry.css */
+
+.data-entry-page {
+    padding: 20px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Ensure the form and table are centered and responsive */
+/* .container {
+    max-width: 100%;
+} */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table input, .table select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .table th, .table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+        display: block;
+        border: 1px solid #ddd;
+    }
+
+    .table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 10px;
+    }
+}
+
+/* Button styles */
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #0056b3, #003d7a);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #28a745, #218838);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-success:hover {
+    background: linear-gradient(45deg, #218838, #1e7e34);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-info {
+    background: linear-gradient(45deg, #17a2b8, #117a8b);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-info:hover {
+    background: linear-gradient(45deg, #d7f5fa, #0b5b6e);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 15em;
+}
+/* DataEntry.css */
+
+.alert {
+    padding: 15px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+/* =========================
+   DATA ENTRY PAGE
+========================= */
+
+.data-entry-page{
+    min-height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),
+    url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding-top: 120px;
+    color: white;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.data-entry-page .container{
+    width: 95%;
+    max-width: 1500px;
+    margin: auto;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.data-entry-page .page-title{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+
+    margin-bottom: 35px;
+
+    color: #ffffff;
+}
+
+.data-entry-page .page-title::after{
+    content: "";
+    display: block;
+
+    width: 120px;
+    height: 5px;
+
+    background: #00bfff;
+
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.data-entry-page .table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
+/* TABLE HEAD */
+
+.data-entry-page .table thead{
+    background: rgba(0,191,255,0.25);
+}
+
+.data-entry-page .table th{
+    padding: 18px;
+    text-align: center;
+
+    color: #4d4848;
+    font-size: 16px;
+    font-weight: 700;
+
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+/* TABLE BODY */
+
+.data-entry-page .table td{
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.data-entry-page .form-control{
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.12);
+    color: white;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.data-entry-page .form-control:focus{
+    background: rgba(255,255,255,0.18);
+
+    box-shadow:
+    0 0 0 3px rgba(0,191,255,0.4);
+}
+
+/* Placeholder */
+
+.data-entry-page .form-control::placeholder{
+    color: #ddd;
+}
+
+/* Select */
+
+.data-entry-page select.form-control{
+    cursor: pointer;
+}
+
+/* =========================
+   BUTTON GROUP
+========================= */
+
+.data-entry-page .button-group{
+    margin-top: 30px;
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+/* COMMON BUTTON */
+
+.data-entry-page .btn{
+    border: none;
+    outline: none;
+
+    padding: 14px 28px;
+
+    border-radius: 14px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* PRIMARY */
+
+.data-entry-page .btn-primary{
+    background: #007bff;
+    color: white;
+}
+
+.data-entry-page .btn-primary:hover{
+    background: #0062cc;
+    transform: translateY(-3px);
+}
+
+/* SUCCESS */
+
+.data-entry-page .btn-success{
+    background: #28a745;
+    color: white;
+}
+
+.data-entry-page .btn-success:hover{
+    background: #1f8a39;
+    transform: translateY(-3px);
+}
+
+/* INFO */
+
+.data-entry-page .btn-info{
+    background: #17a2b8;
+    color: white;
+}
+
+.data-entry-page .btn-info:hover{
+    background: #11707f;
+    transform: translateY(-3px);
+}
+
+/* DANGER */
+
+.data-entry-page .btn-danger{
+    background: #dc3545;
+    color: white;
+
+    padding: 10px 18px;
+}
+
+.data-entry-page .btn-danger:hover{
+    background: #b52a37;
+}
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.data-entry-page .alert-success{
+    margin-top: 30px;
+
+    background: rgba(40,167,69,0.2);
+
+    border: 1px solid rgba(40,167,69,0.5);
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    color: #7dffb0;
+
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1200px){
+
+    .data-entry-page .container{
+        overflow-x: auto;
+    }
+
+    .data-entry-page .table{
+        min-width: 1200px;
+    }
+}
+
+@media(max-width:768px){
+
+    .data-entry-page{
+        padding-top: 90px;
+    }
+
+    .data-entry-page .container{
+        padding: 20px;
+    }
+
+    .data-entry-page .page-title{
+        font-size: 32px;
+    }
+
+    .data-entry-page .button-group{
+        flex-direction: column;
+    }
+
+    .data-entry-page .btn{
+        width: 100%;
+    }
+}

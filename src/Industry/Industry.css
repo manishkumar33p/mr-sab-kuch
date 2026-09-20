@@ -1,0 +1,943 @@
+/* =========================================================
+   NISS TECHNOLOGIES - INDUSTRY PAGE
+   Complete Responsive CSS
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.industry-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f9fc;
+  color: #102a56;
+  overflow: hidden;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.industry-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.industry-hero {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(255, 111, 0, 0.12),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(13, 66, 130, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #ffffff 0%, #f3f7fc 100%);
+  padding: 100px 0 80px;
+}
+
+.industry-hero::before {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border: 1px solid rgba(16, 76, 145, 0.08);
+  border-radius: 50%;
+  right: -120px;
+  top: 50px;
+}
+
+.industry-hero::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(255, 111, 0, 0.1);
+  border-radius: 50%;
+  right: 30px;
+  top: 110px;
+}
+
+.industry-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+
+.industry-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 17px;
+  border-radius: 50px;
+  background: rgba(255, 111, 0, 0.1);
+  color: #ff6b00;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.industry-badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff6b00;
+  box-shadow: 0 0 0 5px rgba(255, 107, 0, 0.12);
+}
+
+.industry-hero h1 {
+  margin: 0;
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.03;
+  font-weight: 850;
+  letter-spacing: -2.5px;
+  color: #102a56;
+}
+
+.industry-hero h1 span {
+  color: #ff6b00;
+}
+
+.industry-hero p {
+  max-width: 720px;
+  margin: 25px 0 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #5c6b80;
+}
+
+.industry-hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.industry-primary-btn,
+.industry-secondary-btn {
+  min-height: 50px;
+  padding: 0 25px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 750;
+  transition: 0.3s ease;
+}
+
+.industry-primary-btn {
+  color: #fff;
+  background: linear-gradient(135deg, #ff7900, #ff5b00);
+  box-shadow: 0 12px 28px rgba(255, 103, 0, 0.24);
+}
+
+.industry-primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 17px 35px rgba(255, 103, 0, 0.32);
+}
+
+.industry-secondary-btn {
+  color: #12396c;
+  border: 1px solid #d9e2ee;
+  background: #fff;
+}
+
+.industry-secondary-btn:hover {
+  border-color: #ff6b00;
+  color: #ff6b00;
+  transform: translateY(-3px);
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.industry-section {
+  padding: 95px 0;
+}
+
+.industry-section-header {
+  max-width: 750px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.industry-section-label {
+  display: inline-block;
+  color: #ff6b00;
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.industry-section-header h2 {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.15;
+  color: #102a56;
+  letter-spacing: -1px;
+}
+
+.industry-section-header p {
+  margin: 17px auto 0;
+  color: #66758a;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* =========================================================
+   INDUSTRY GRID
+========================================================= */
+
+.industries-grid,
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.industry-card {
+  position: relative;
+  padding: 32px 28px;
+  background: #ffffff;
+  border: 1px solid #e5ebf3;
+  border-radius: 18px;
+  min-height: 250px;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.industry-card::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(255, 107, 0, 0.07);
+  top: -30px;
+  right: -25px;
+  transition: 0.35s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 107, 0, 0.35);
+  box-shadow: 0 20px 45px rgba(20, 52, 92, 0.1);
+}
+
+.industry-card:hover::before {
+  transform: scale(1.7);
+}
+
+.industry-card-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fff0e5, #fff8f2);
+  font-size: 28px;
+  margin-bottom: 22px;
+}
+
+.industry-card h3 {
+  position: relative;
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #102a56;
+}
+
+.industry-card p {
+  position: relative;
+  margin: 0;
+  color: #68778b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.industry-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 20px;
+  color: #ff6b00;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.industry-card-link:hover {
+  gap: 11px;
+}
+
+/* =========================================================
+   VISION SECTION
+========================================================= */
+
+.industry-vision {
+  padding: 100px 0;
+  background: #102a56;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.industry-vision::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  right: -180px;
+  top: -180px;
+}
+
+.industry-vision::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(255, 107, 0, 0.2);
+  border-radius: 50%;
+  left: -130px;
+  bottom: -130px;
+}
+
+.industry-vision-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.industry-vision-content .industry-section-label {
+  color: #ff8a32;
+}
+
+.industry-vision-content h2 {
+  margin: 12px 0 20px;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.12;
+  color: #fff;
+}
+
+.industry-vision-content p {
+  color: #c8d4e5;
+  font-size: 16px;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+.vision-points {
+  display: grid;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.vision-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #e5edf7;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.vision-point span {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff6b00;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* =========================================================
+   CEO SECTION
+========================================================= */
+
+.ceo-section {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.ceo-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 50px;
+  align-items: center;
+  padding: 45px;
+  border-radius: 24px;
+  background:
+    linear-gradient(
+      135deg,
+      #f8fbff 0%,
+      #ffffff 100%
+    );
+  border: 1px solid #e3eaf3;
+  box-shadow: 0 18px 50px rgba(22, 54, 95, 0.07);
+}
+
+.ceo-image,
+.ceo-avatar {
+  width: 230px;
+  height: 230px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #102a56, #174e91);
+  color: #fff;
+  font-size: 58px;
+  font-weight: 800;
+  box-shadow:
+    0 0 0 10px #fff,
+    0 0 0 11px #e5ebf3,
+    0 20px 40px rgba(16, 42, 86, 0.2);
+}
+
+.ceo-content .industry-section-label {
+  margin-bottom: 10px;
+}
+
+.ceo-content h2 {
+  margin: 0 0 8px;
+  color: #102a56;
+  font-size: 34px;
+}
+
+.ceo-content h3 {
+  margin: 0 0 20px;
+  color: #ff6b00;
+  font-size: 16px;
+  font-weight: 750;
+}
+
+.ceo-content p {
+  color: #637286;
+  line-height: 1.85;
+  font-size: 15px;
+}
+
+/* =========================================================
+   BUSINESS MODEL / HOW WE WORK
+========================================================= */
+
+.industry-process {
+  padding: 100px 0;
+  background: #f5f8fc;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+.process-card {
+  position: relative;
+  padding: 30px 24px;
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid #e2e9f2;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 35px rgba(20, 50, 90, 0.09);
+}
+
+.process-number {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #102a56;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.process-card h3 {
+  margin: 0 0 10px;
+  color: #102a56;
+  font-size: 18px;
+}
+
+.process-card p {
+  margin: 0;
+  color: #68778a;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* =========================================================
+   CUSTOMER ACCOUNT SECTION
+========================================================= */
+
+.customer-account-section {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.customer-account-box {
+  position: relative;
+  padding: 60px;
+  border-radius: 28px;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, #102a56 0%, #173e72 100%);
+  color: #fff;
+  box-shadow: 0 25px 60px rgba(16, 42, 86, 0.18);
+}
+
+.customer-account-box::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 50%;
+  right: -100px;
+  top: -100px;
+}
+
+.customer-account-box::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(255,107,0,0.25);
+  border-radius: 50%;
+  left: -80px;
+  bottom: -80px;
+}
+
+.customer-account-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+}
+
+.customer-account-label {
+  color: #ff8a32;
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.customer-account-box h2 {
+  margin: 12px 0 18px;
+  color: #fff;
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.1;
+}
+
+.customer-account-box > p {
+  color: #c8d5e6;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 780px;
+}
+
+.customer-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.customer-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.07);
+  color: #f0f5fb;
+  font-size: 14px;
+}
+
+.customer-feature span {
+  color: #ff8a32;
+  font-size: 18px;
+}
+
+/* =========================================================
+   CUSTOMER PROFILE CARD
+========================================================= */
+
+.customer-profile {
+  margin-top: 35px;
+  padding: 25px;
+  max-width: 450px;
+  border-radius: 18px;
+  background: #fff;
+  color: #102a56;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.customer-profile-title {
+  font-size: 12px;
+  color: #ff6b00;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.customer-profile-name {
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.customer-profile-number {
+  margin-top: 5px;
+  color: #69778a;
+  font-size: 14px;
+}
+
+.customer-profile-menu {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.customer-profile-menu div {
+  padding: 10px 12px;
+  background: #f5f7fa;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+/* =========================================================
+   TECHNOLOGY SECTION
+========================================================= */
+
+.industry-tech {
+  padding: 100px 0;
+  background: #f7f9fc;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tech-card {
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #e4eaf2;
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff6b00;
+  box-shadow: 0 15px 35px rgba(20, 50, 90, 0.08);
+}
+
+.tech-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #102a56;
+}
+
+.tech-card p {
+  margin: 0;
+  color: #68778b;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* =========================================================
+   FUTURE / CTA
+========================================================= */
+
+.industry-cta {
+  padding: 100px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.industry-cta-box {
+  padding: 70px 30px;
+  border-radius: 25px;
+  background: linear-gradient(
+    135deg,
+    #fff4eb,
+    #fffaf6
+  );
+  border: 1px solid #ffe0ca;
+}
+
+.industry-cta-box h2 {
+  margin: 0;
+  color: #102a56;
+  font-size: clamp(32px, 5vw, 52px);
+}
+
+.industry-cta-box p {
+  max-width: 700px;
+  margin: 18px auto 30px;
+  color: #68778a;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes industryFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.industry-card,
+.process-card,
+.tech-card,
+.ceo-card {
+  animation: industryFadeUp 0.7s ease both;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .industries-grid,
+  .industry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .industry-vision-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .ceo-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .ceo-image,
+  .ceo-avatar {
+    margin: 0 auto 15px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .industry-container {
+    width: min(92%, 560px);
+  }
+
+  .industry-hero {
+    min-height: auto;
+    padding: 75px 0 65px;
+  }
+
+  .industry-hero h1 {
+    font-size: 43px;
+    letter-spacing: -1.5px;
+  }
+
+  .industry-hero p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .industry-hero-buttons {
+    flex-direction: column;
+  }
+
+  .industry-primary-btn,
+  .industry-secondary-btn {
+    width: 100%;
+  }
+
+  .industry-section,
+  .industry-vision,
+  .ceo-section,
+  .industry-process,
+  .customer-account-section,
+  .industry-tech,
+  .industry-cta {
+    padding: 65px 0;
+  }
+
+  .industry-section-header {
+    margin-bottom: 35px;
+  }
+
+  .industry-section-header h2 {
+    font-size: 32px;
+  }
+
+  .industries-grid,
+  .industry-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .industry-card {
+    min-height: auto;
+    padding: 25px 22px;
+  }
+
+  .industry-vision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-vision-content h2 {
+    font-size: 34px;
+  }
+
+  .ceo-card {
+    padding: 30px 20px;
+    border-radius: 18px;
+  }
+
+  .ceo-image,
+  .ceo-avatar {
+    width: 170px;
+    height: 170px;
+    font-size: 42px;
+  }
+
+  .ceo-content h2 {
+    font-size: 27px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .customer-account-box {
+    padding: 35px 22px;
+    border-radius: 20px;
+  }
+
+  .customer-account-box h2 {
+    font-size: 34px;
+  }
+
+  .customer-account-box > p {
+    font-size: 14px;
+  }
+
+  .customer-features {
+    grid-template-columns: 1fr;
+  }
+
+  .customer-profile {
+    padding: 20px;
+  }
+
+  .industry-cta-box {
+    padding: 45px 20px;
+  }
+
+  .industry-cta-box h2 {
+    font-size: 32px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .industry-hero {
+    padding-top: 55px;
+  }
+
+  .industry-hero h1 {
+    font-size: 36px;
+  }
+
+  .industry-badge {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .industry-card h3 {
+    font-size: 18px;
+  }
+
+  .industry-section-header h2 {
+    font-size: 28px;
+  }
+
+  .industry-vision-content h2 {
+    font-size: 30px;
+  }
+
+  .customer-account-box h2 {
+    font-size: 30px;
+  }
+}

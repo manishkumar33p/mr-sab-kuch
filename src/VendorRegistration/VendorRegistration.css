@@ -1,0 +1,157 @@
+.vendor-registration-page {
+  min-height: 100vh;
+  padding: 110px 7% 60px;
+  background: #f5f7fb;
+  color: #17233c;
+}
+
+.vendor-registration-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.vendor-registration-header {
+  margin-bottom: 30px;
+}
+
+.vendor-registration-header span {
+  color: #ff6500;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.vendor-registration-header h1 {
+  margin: 8px 0;
+  font-size: 38px;
+}
+
+.vendor-registration-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.vendor-registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-section {
+  padding: 28px;
+  background: white;
+  border: 1px solid #e3e8ef;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(20, 35, 60, 0.05);
+}
+
+.form-section h2 {
+  margin: 0 0 22px;
+  font-size: 21px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.form-grid .form-group {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #344054;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #d8dee8;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #ff6500;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.vendor-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancel-btn,
+.submit-vendor-btn {
+  border: none;
+  padding: 13px 22px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #e9edf3;
+  color: #17233c;
+}
+
+.submit-vendor-btn {
+  background: #ff6500;
+  color: white;
+}
+
+.submit-vendor-btn:hover,
+.cancel-btn:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 700px) {
+
+  .vendor-registration-page {
+    padding: 90px 15px 40px;
+  }
+
+  .vendor-registration-header h1 {
+    font-size: 30px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-section {
+    padding: 20px 15px;
+  }
+
+  .vendor-form-actions {
+    flex-direction: column;
+  }
+
+  .cancel-btn,
+  .submit-vendor-btn {
+    width: 100%;
+  }
+
+}

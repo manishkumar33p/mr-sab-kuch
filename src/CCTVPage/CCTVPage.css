@@ -1,0 +1,1182 @@
+/* =========================================================
+   MAIN
+========================================================= */
+
+.cctv-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+  color: #071b49;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.cctv-hero {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+}
+
+.cctv-hero-video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.cctv-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 18, 52, 0.96) 0%,
+      rgba(4, 24, 65, 0.86) 48%,
+      rgba(4, 20, 50, 0.55) 100%
+    );
+}
+
+.cctv-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1300px;
+  min-height: 720px;
+
+  margin: auto;
+
+  padding: 100px 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.security-badge {
+  display: inline-flex;
+
+  width: fit-content;
+
+  padding: 9px 18px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.cctv-hero h1 {
+  max-width: 800px;
+
+  color: white;
+
+  font-size: 62px;
+
+  line-height: 1.05;
+
+  margin: 25px 0 20px;
+
+  font-weight: 800;
+}
+
+.cctv-hero h1 span {
+  display: block;
+
+  color: #f47b20;
+
+  margin-top: 8px;
+}
+
+.cctv-hero-content > p {
+  max-width: 700px;
+
+  color: rgba(255,255,255,0.88);
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.cctv-hero-buttons {
+  display: flex;
+
+  gap: 15px;
+}
+
+.cctv-hero-buttons button {
+  padding: 15px 27px;
+
+  border-radius: 7px;
+
+  font-weight: 700;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.cctv-primary-btn {
+  border: none;
+
+  background: #f47b20;
+
+  color: white;
+}
+
+.cctv-primary-btn:hover {
+  background: #ff913b;
+
+  transform: translateY(-2px);
+}
+
+.cctv-outline-btn {
+  background: transparent;
+
+  border: 1px solid white;
+
+  color: white;
+}
+
+.cctv-outline-btn:hover {
+  background: white;
+
+  color: #071b49;
+}
+
+
+/* =========================================================
+   SECURITY FEATURES
+========================================================= */
+
+.security-features {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 150px);
+
+  gap: 0;
+
+  margin-top: 55px;
+
+  border-top: 1px solid rgba(255,255,255,0.3);
+
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+
+  width: fit-content;
+}
+
+.security-features div {
+  padding: 18px 25px;
+
+  border-right: 1px solid rgba(255,255,255,0.3);
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.security-features div:last-child {
+  border-right: none;
+}
+
+.security-features strong {
+  color: #f47b20;
+
+  font-size: 19px;
+}
+
+.security-features span {
+  color: white;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.security-intro {
+  max-width: 1250px;
+
+  margin: auto;
+
+  padding: 90px 30px;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.5fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+.section-label {
+  color: #f47b20;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.intro-left h2 {
+  font-size: 45px;
+
+  line-height: 1.1;
+
+  margin: 15px 0;
+}
+
+.intro-left h2 span {
+  display: block;
+
+  color: #f47b20;
+}
+
+.intro-left p {
+  color: #687080;
+
+  line-height: 1.8;
+
+  font-size: 16px;
+}
+
+.intro-cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.intro-card {
+  padding: 25px;
+
+  border-radius: 12px;
+
+  background: #f7f9fc;
+
+  border: 1px solid #e6eaf0;
+
+  transition: 0.3s;
+}
+
+.intro-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #f47b20;
+
+  box-shadow:
+    0 15px 35px rgba(7,27,73,0.1);
+}
+
+.intro-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #071b49;
+
+  font-size: 23px;
+
+  margin-bottom: 18px;
+}
+
+.intro-card h3 {
+  margin: 0 0 8px;
+
+  font-size: 17px;
+}
+
+.intro-card p {
+  margin: 0;
+
+  color: #707070;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.section-title {
+  text-align: center;
+
+  max-width: 800px;
+
+  margin: 0 auto 45px;
+}
+
+.section-title span {
+  color: #f47b20;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.section-title h2 {
+  margin: 10px 0;
+
+  font-size: 42px;
+
+  color: #071b49;
+}
+
+.section-title p {
+  color: #717985;
+
+  margin: 0;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   PRODUCTS SECTION
+========================================================= */
+
+.cctv-products-section {
+  background: #f6f8fb;
+
+  padding: 90px 25px;
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.cctv-filter {
+  max-width: 1200px;
+
+  margin: 0 auto 40px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.cctv-search {
+  width: 400px;
+
+  background: white;
+
+  border: 1px solid #e0e4ea;
+
+  border-radius: 8px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 15px;
+}
+
+.cctv-search span {
+  font-size: 24px;
+
+  color: #f47b20;
+}
+
+.cctv-search input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  padding: 14px;
+
+  font-size: 14px;
+}
+
+.category-buttons {
+  display: flex;
+
+  gap: 8px;
+}
+
+.category-buttons button {
+  border: 1px solid #dce1e8;
+
+  background: white;
+
+  padding: 11px 20px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  color: #071b49;
+
+  transition: 0.3s;
+}
+
+.category-buttons button:hover,
+.category-buttons button.active {
+  background: #071b49;
+
+  color: white;
+
+  border-color: #071b49;
+}
+
+
+/* =========================================================
+   CCTV GRID
+========================================================= */
+
+.cctv-grid {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 24px;
+}
+
+
+/* =========================================================
+   CCTV CARD
+========================================================= */
+
+.cctv-card {
+  background: white;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  border: 1px solid #e4e8ed;
+
+  transition: 0.35s;
+}
+
+.cctv-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 18px 40px rgba(7,27,73,0.13);
+}
+
+.cctv-image {
+  position: relative;
+
+  height: 220px;
+
+  overflow: hidden;
+}
+
+.cctv-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.4s;
+}
+
+.cctv-card:hover .cctv-image img {
+  transform: scale(1.06);
+}
+
+.product-badge {
+  position: absolute;
+
+  top: 12px;
+  left: 12px;
+
+  padding: 6px 11px;
+
+  border-radius: 5px;
+
+  background: #071b49;
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.cctv-info {
+  padding: 20px;
+}
+
+.cctv-info h3 {
+  margin: 0 0 8px;
+
+  font-size: 18px;
+
+  color: #071b49;
+}
+
+.cctv-info > p {
+  margin: 0 0 18px;
+
+  color: #737b87;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  min-height: 42px;
+}
+
+.product-bottom {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.product-bottom strong {
+  color: #f47b20;
+
+  font-size: 20px;
+}
+
+.product-bottom button {
+  border: none;
+
+  background: #071b49;
+
+  color: white;
+
+  padding: 10px 14px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.product-bottom button:hover {
+  background: #f47b20;
+}
+
+
+/* =========================================================
+   SECURITY SERVICES
+========================================================= */
+
+.security-services {
+  background: #071b49;
+
+  padding: 90px 25px;
+}
+
+.section-title.light h2 {
+  color: white;
+}
+
+.section-title.light p {
+  color: rgba(255,255,255,0.7);
+}
+
+.security-service-grid {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.security-service-card {
+  padding: 30px;
+
+  background: rgba(255,255,255,0.07);
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  border-radius: 12px;
+
+  transition: 0.3s;
+}
+
+.security-service-card:hover {
+  background: rgba(255,255,255,0.12);
+
+  transform: translateY(-5px);
+}
+
+.security-service-card > div {
+  font-size: 32px;
+
+  margin-bottom: 15px;
+}
+
+.security-service-card h3 {
+  color: white;
+
+  margin: 0 0 10px;
+}
+
+.security-service-card p {
+  color: rgba(255,255,255,0.65);
+
+  line-height: 1.7;
+
+  font-size: 14px;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   INSTALLATION
+========================================================= */
+
+.installation-section {
+  padding: 90px 25px;
+
+  background: white;
+}
+
+.installation-content {
+  max-width: 1150px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+.installation-content h2 {
+  font-size: 45px;
+
+  line-height: 1.15;
+
+  color: #071b49;
+
+  margin: 15px 0;
+}
+
+.installation-content h2 span {
+  display: block;
+
+  color: #f47b20;
+}
+
+.installation-content p {
+  color: #6d7480;
+
+  line-height: 1.8;
+}
+
+.installation-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.installation-list div {
+  padding: 18px;
+
+  background: #f6f8fb;
+
+  border: 1px solid #e5e8ed;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  color: #071b49;
+}
+
+.installation-list span {
+  color: #f47b20;
+
+  margin-right: 8px;
+
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   WHY SECURITY
+========================================================= */
+
+.why-security {
+  background: #f6f8fb;
+
+  padding: 90px 25px;
+}
+
+.why-grid {
+  max-width: 1150px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.why-grid > div {
+  background: white;
+
+  padding: 28px;
+
+  border-radius: 10px;
+
+  border: 1px solid #e4e8ed;
+}
+
+.why-grid strong {
+  color: #f47b20;
+
+  font-size: 30px;
+}
+
+.why-grid h3 {
+  color: #071b49;
+
+  margin: 15px 0 8px;
+}
+
+.why-grid p {
+  color: #727986;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.security-cta {
+  max-width: 1200px;
+
+  margin: 70px auto;
+
+  padding: 45px;
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      120deg,
+      #071b49,
+      #0b347d
+    );
+
+  color: white;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+.security-cta span {
+  color: #f47b20;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.security-cta h2 {
+  font-size: 34px;
+
+  margin: 10px 0;
+}
+
+.security-cta p {
+  color: rgba(255,255,255,0.7);
+
+  margin: 0;
+}
+
+.cta-right {
+  text-align: right;
+}
+
+.cta-right strong {
+  display: block;
+
+  font-size: 28px;
+
+  margin-bottom: 15px;
+}
+
+.cta-right button {
+  border: none;
+
+  background: #f47b20;
+
+  color: white;
+
+  padding: 13px 20px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.cctv-message {
+  position: fixed;
+
+  right: 25px;
+
+  bottom: 25px;
+
+  z-index: 9999;
+
+  background: #071b49;
+
+  color: white;
+
+  padding: 15px 22px;
+
+  border-radius: 7px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.2);
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   NO PRODUCTS
+========================================================= */
+
+.no-products {
+  grid-column: 1 / -1;
+
+  text-align: center;
+
+  padding: 70px 20px;
+}
+
+.no-products div {
+  font-size: 40px;
+}
+
+.no-products h3 {
+  font-size: 22px;
+}
+
+.no-products p {
+  color: #777;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .cctv-hero h1 {
+    font-size: 48px;
+  }
+
+  .cctv-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .security-service-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .security-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .installation-content {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .cctv-hero {
+    min-height: 650px;
+  }
+
+  .cctv-hero-content {
+    min-height: 650px;
+
+    padding: 70px 20px;
+  }
+
+  .cctv-hero h1 {
+    font-size: 38px;
+  }
+
+  .cctv-hero-content > p {
+    font-size: 15px;
+  }
+
+  .cctv-hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .cctv-hero-buttons button {
+    width: 100%;
+  }
+
+  .security-features {
+    width: 100%;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .security-features div {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .security-features div:nth-child(2) {
+    border-right: none;
+  }
+
+  .security-intro {
+    padding: 60px 20px;
+
+    gap: 35px;
+  }
+
+  .intro-left h2 {
+    font-size: 35px;
+  }
+
+  .intro-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cctv-products-section,
+  .security-services,
+  .installation-section,
+  .why-security {
+    padding: 65px 15px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .cctv-filter {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .cctv-search {
+    width: auto;
+  }
+
+  .category-buttons {
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+
+  .cctv-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .cctv-image {
+    height: 240px;
+  }
+
+  .security-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .installation-content {
+    gap: 35px;
+  }
+
+  .installation-content h2 {
+    font-size: 35px;
+  }
+
+  .installation-list {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .security-cta {
+    margin: 40px 15px;
+
+    padding: 30px 22px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .cta-right {
+    text-align: left;
+  }
+
+  .cta-right strong {
+    font-size: 24px;
+  }
+
+  .cta-right button {
+    width: 100%;
+  }
+
+  .cctv-message {
+    left: 15px;
+
+    right: 15px;
+
+    bottom: 15px;
+
+    text-align: center;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .cctv-hero h1 {
+    font-size: 32px;
+  }
+
+  .security-features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .security-features div {
+    padding: 15px 10px;
+  }
+
+  .product-bottom {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .product-bottom button {
+    width: 100%;
+  }
+
+}

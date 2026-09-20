@@ -1,0 +1,632 @@
+/* =========================================================
+   NISS TECHNOLOGIES NAVBAR
+   FULLY RESPONSIVE
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 9999;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.nav.container {
+  width: 100%;
+  max-width: 1450px;
+  min-height: 78px;
+  margin: 0 auto;
+  padding: 0 28px;
+
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav__logo-img {
+  width: 150px;
+  height: auto;
+  max-height: 62px;
+  object-fit: contain;
+  display: block;
+}
+
+/* =========================================================
+   LOCATION
+========================================================= */
+
+.nav__location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  max-width: 220px;
+  min-width: 120px;
+
+  color: #333;
+  font-size: 13px;
+  font-weight: 500;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav__location svg {
+  color: #f36c21;
+  font-size: 19px;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   MENU
+========================================================= */
+
+.nav__menu {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav__item {
+  position: relative;
+}
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  min-height: 44px;
+  padding: 10px 13px;
+
+  color: #202020;
+  background: transparent;
+
+  text-decoration: none;
+  border: none;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.nav__link:hover,
+.nav__link.active {
+  color: #f36c21;
+}
+
+/* =========================================================
+   DROPDOWN BUTTON
+========================================================= */
+
+.dropdown-toggle {
+  appearance: none;
+}
+
+.dropdown-toggle svg {
+  font-size: 15px;
+  transition: transform 0.25s ease;
+}
+
+.dropdown-open > .dropdown-toggle svg {
+  transform: rotate(180deg);
+}
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+
+  min-width: 245px;
+
+  margin: 0;
+  padding: 8px;
+
+  list-style: none;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+
+  transition: all 0.22s ease;
+
+  z-index: 10000;
+}
+
+.dropdown:hover > .dropdown-menu,
+.dropdown-open > .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-item a {
+  display: block;
+
+  padding: 11px 13px;
+
+  color: #222;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  border-radius: 8px;
+
+  transition: 0.2s ease;
+}
+
+.dropdown-item a:hover {
+  background: #fff4ed;
+  color: #f36c21;
+  padding-left: 17px;
+}
+
+/* More dropdown */
+
+.more-menu {
+  left: auto;
+  right: 0;
+  min-width: 180px;
+}
+
+/* =========================================================
+   GET QUOTE
+========================================================= */
+
+.quote-item {
+  margin-left: 5px;
+}
+
+.get-quote-btn {
+  min-height: 42px;
+
+  padding: 10px 18px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: linear-gradient(
+    135deg,
+    #f36c21,
+    #ff8a3d
+  );
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba(243, 108, 33, 0.25);
+
+  transition: 0.25s ease;
+}
+
+.get-quote-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(243, 108, 33, 0.35);
+}
+
+/* =========================================================
+   CART
+========================================================= */
+
+.cart-link {
+  gap: 7px;
+}
+
+.nav__cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav__cart-icon {
+  font-size: 23px;
+}
+
+.cart-count {
+  position: absolute;
+
+  top: -9px;
+  right: -10px;
+
+  min-width: 18px;
+  height: 18px;
+
+  padding: 0 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f36c21;
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.cart-text {
+  font-size: 15px;
+}
+
+/* =========================================================
+   MOBILE BUTTONS
+========================================================= */
+
+.nav__toggle,
+.nav__close {
+  display: none;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1150px) {
+
+  .nav.container {
+    min-height: 72px;
+    padding: 0 20px;
+    gap: 15px;
+  }
+
+  .nav__logo-img {
+    width: 135px;
+  }
+
+  .nav__location {
+    max-width: 170px;
+    font-size: 12px;
+  }
+
+  .nav__link {
+    padding: 9px 9px;
+    font-size: 14px;
+  }
+
+  .get-quote-btn {
+    padding: 9px 13px;
+  }
+}
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+@media (max-width: 1150px) {
+
+  .nav.container {
+    justify-content: space-between;
+  }
+
+  .nav__location {
+    margin-left: auto;
+  }
+
+  .nav__toggle {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #f36c21;
+    color: #ffffff;
+
+    font-size: 25px;
+
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .nav__menu {
+
+    position: fixed;
+
+    top: 0;
+    right: -100%;
+
+    width: min(360px, 88vw);
+    height: 100vh;
+
+    margin: 0;
+
+    background: #ffffff;
+
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.15);
+
+    display: block;
+
+    overflow-y: auto;
+
+    transition: right 0.3s ease;
+
+    z-index: 99999;
+  }
+
+  .nav__menu.show-menu {
+    right: 0;
+  }
+
+  .nav__close {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 0 22px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    color: #222;
+
+    cursor: pointer;
+  }
+
+  .nav__close svg {
+    font-size: 29px;
+  }
+
+  .nav__list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0;
+
+    padding: 12px 15px 30px;
+  }
+
+  .nav__item {
+    width: 100%;
+  }
+
+  .nav__link {
+    width: 100%;
+    min-height: 50px;
+
+    justify-content: flex-start;
+
+    padding: 12px 14px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+  }
+
+  .nav__link:hover,
+  .nav__link.active {
+    background: #fff5ef;
+  }
+
+  /* =====================================================
+     MOBILE DROPDOWN
+  ===================================================== */
+
+  .dropdown-menu {
+    position: static;
+
+    width: 100%;
+    min-width: 0;
+
+    display: none;
+
+    margin: 0;
+    padding: 5px 0 5px 12px;
+
+    border: none;
+    border-radius: 0;
+
+    box-shadow: none;
+
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .dropdown-open > .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-item a {
+    padding: 11px 13px;
+
+    border-left: 2px solid #f36c21;
+
+    border-radius: 0;
+
+    font-size: 14px;
+  }
+
+  .dropdown-item a:hover {
+    padding-left: 16px;
+  }
+
+  .dropdown-toggle {
+    justify-content: space-between;
+  }
+
+  .more-menu {
+    position: static;
+    right: auto;
+  }
+
+  /* =====================================================
+     QUOTE MOBILE
+  ===================================================== */
+
+  .quote-item {
+    margin: 8px 0;
+  }
+
+  .get-quote-btn {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  /* =====================================================
+     CART MOBILE
+  ===================================================== */
+
+  .cart-link {
+    justify-content: flex-start;
+  }
+
+  .cart-text {
+    display: inline;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .nav.container {
+    min-height: 66px;
+    padding: 0 14px;
+    gap: 8px;
+  }
+
+  .nav__logo-img {
+    width: 112px;
+    max-height: 50px;
+  }
+
+  .nav__location {
+    max-width: 125px;
+    min-width: 0;
+
+    font-size: 11px;
+  }
+
+  .nav__location svg {
+    font-size: 17px;
+  }
+
+  .nav__toggle {
+    width: 40px;
+    height: 40px;
+
+    font-size: 23px;
+  }
+
+  .nav__menu {
+    width: min(340px, 92vw);
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .nav.container {
+    padding: 0 10px;
+  }
+
+  .nav__logo-img {
+    width: 100px;
+  }
+
+  .nav__location {
+    max-width: 100px;
+  }
+
+  .nav__toggle {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.nav__link:focus-visible,
+.get-quote-btn:focus-visible,
+.nav__toggle:focus-visible,
+.nav__close:focus-visible {
+  outline: 2px solid #f36c21;
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   SCROLLBAR MOBILE MENU
+========================================================= */
+
+.nav__menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+.nav__menu::-webkit-scrollbar-thumb {
+  background: #dddddd;
+  border-radius: 10px;
+}

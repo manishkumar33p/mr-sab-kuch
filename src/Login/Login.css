@@ -1,0 +1,563 @@
+/* =====================================================
+   NISS ADMIN LOGIN
+   ISOLATED CSS
+===================================================== */
+
+.niss-admin-login-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   VIDEO
+===================================================== */
+
+.niss-admin-login-video {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: -3;
+}
+
+
+/* =====================================================
+   OVERLAY
+===================================================== */
+
+.niss-admin-login-overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 10, 25, 0.94),
+      rgba(4, 10, 25, 0.72)
+    );
+
+  z-index: -2;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.niss-admin-login-container {
+  min-height: 100vh;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.2fr)
+    minmax(360px, 0.8fr);
+
+  align-items: center;
+
+  gap: 70px;
+
+  max-width: 1250px;
+
+  margin: auto;
+
+  padding:
+    130px 35px
+    70px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   LEFT INFORMATION
+===================================================== */
+
+.niss-admin-login-info {
+  max-width: 650px;
+}
+
+.niss-admin-login-badge {
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 102, 0, 0.16);
+
+  border: 1px solid rgba(255, 102, 0, 0.45);
+
+  color: #ff7600;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.niss-admin-login-info h1 {
+  margin: 25px 0 20px;
+
+  font-size: clamp(42px, 5vw, 70px);
+
+  line-height: 1.05;
+
+  font-weight: 800;
+}
+
+
+.niss-admin-login-info h1 span {
+  display: block;
+
+  color: #ff7000;
+}
+
+
+.niss-admin-login-info > p {
+  max-width: 600px;
+
+  color: #d7dbe4;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+}
+
+
+/* =====================================================
+   FEATURES
+===================================================== */
+
+.niss-admin-login-features {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+.niss-admin-feature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  width: fit-content;
+
+  padding: 13px 18px;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(10px);
+}
+
+
+.niss-admin-feature > span {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: rgba(255, 102, 0, 0.18);
+
+  font-size: 19px;
+}
+
+
+.niss-admin-feature strong {
+  display: block;
+
+  font-size: 14px;
+
+  margin-bottom: 4px;
+}
+
+
+.niss-admin-feature small {
+  display: block;
+
+  color: #aeb6c5;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   LOGIN CARD
+===================================================== */
+
+.niss-admin-login-card {
+  width: 100%;
+
+  max-width: 430px;
+
+  margin-left: auto;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  color: #17233c;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.35);
+
+  backdrop-filter: blur(20px);
+}
+
+
+.niss-admin-login-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 16px;
+
+  background: #fff0e7;
+
+  font-size: 25px;
+}
+
+
+.niss-admin-login-card h2 {
+  margin: 0;
+
+  font-size: 30px;
+
+  color: #17233c;
+}
+
+
+.niss-admin-login-subtitle {
+  margin: 8px 0 28px;
+
+  color: #707b8c;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.niss-admin-input-group {
+  margin-bottom: 20px;
+}
+
+
+.niss-admin-input-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  color: #25334d;
+}
+
+
+.niss-admin-password-box {
+  position: relative;
+}
+
+
+.niss-admin-password-box input {
+  width: 100%;
+
+  height: 52px;
+
+  padding:
+    0 52px
+    0 15px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dce2eb;
+
+  border-radius: 11px;
+
+  outline: none;
+
+  background: #f8fafc;
+
+  color: #17233c;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+
+.niss-admin-password-box input:focus {
+  border-color: #ff7000;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px rgba(255, 112, 0, 0.1);
+}
+
+
+.niss-admin-show-password {
+  position: absolute;
+
+  right: 5px;
+  top: 5px;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.niss-admin-login-error {
+  margin-bottom: 18px;
+
+  padding: 11px 13px;
+
+  border-radius: 9px;
+
+  background: #fff0f0;
+
+  border: 1px solid #ffd1d1;
+
+  color: #d92d20;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+===================================================== */
+
+.niss-admin-login-button {
+  width: 100%;
+
+  height: 53px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff7900,
+      #ff4d00
+    );
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+
+  box-shadow:
+    0 10px 25px
+    rgba(255, 102, 0, 0.22);
+}
+
+
+.niss-admin-login-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 14px 30px
+    rgba(255, 102, 0, 0.3);
+}
+
+
+.niss-admin-login-button:disabled {
+  opacity: 0.7;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.niss-admin-login-footer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-top: 22px;
+
+  color: #8a94a3;
+
+  font-size: 11px;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .niss-admin-login-container {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    padding-top: 120px;
+  }
+
+  .niss-admin-login-info {
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+  }
+
+  .niss-admin-login-info > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .niss-admin-login-features {
+    align-items: center;
+  }
+
+  .niss-admin-login-card {
+    margin: auto;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .niss-admin-login-container {
+    padding:
+      100px 15px
+      45px;
+  }
+
+  .niss-admin-login-info h1 {
+    font-size: 38px;
+  }
+
+  .niss-admin-login-info > p {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .niss-admin-feature {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    text-align: left;
+  }
+
+  .niss-admin-login-card {
+    padding: 27px 20px;
+
+    border-radius: 20px;
+  }
+
+  .niss-admin-login-card h2 {
+    font-size: 26px;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .niss-admin-login-info h1 {
+    font-size: 32px;
+  }
+
+  .niss-admin-login-card {
+    padding: 23px 16px;
+  }
+
+}

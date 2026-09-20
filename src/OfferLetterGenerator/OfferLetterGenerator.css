@@ -1,0 +1,663 @@
+* {
+  box-sizing: border-box;
+}
+
+.offer-generator {
+  min-height: 100vh;
+  background: #eef1f6;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #101b3a;
+}
+
+
+/* ================= FORM ================= */
+
+.generator-panel {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.generator-heading {
+  border-bottom: 2px solid #f37021;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+}
+
+.generator-heading h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #101b3a;
+}
+
+.generator-heading p {
+  margin: 7px 0 0;
+  color: #666;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full {
+  margin-bottom: 18px;
+}
+
+.form-group label,
+.signature-upload-box label {
+  font-weight: 700;
+  margin-bottom: 7px;
+  font-size: 14px;
+  color: #26324d;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #d5d9e2;
+  border-radius: 7px;
+  padding: 0 13px;
+  outline: none;
+  font-size: 14px;
+  background: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #f37021;
+  box-shadow: 0 0 0 3px rgba(243, 112, 33, 0.08);
+}
+
+.id-search {
+  display: flex;
+  gap: 8px;
+}
+
+.id-search input {
+  flex: 1;
+}
+
+.id-search button {
+  width: 85px;
+  border: none;
+  background: #101b3a;
+  color: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+
+/* ================= SIGNATURE ================= */
+
+.signature-upload-box {
+  margin-top: 10px;
+  border: 1px dashed #b8bfcd;
+  padding: 18px;
+  border-radius: 8px;
+  background: #fafbfc;
+}
+
+.signature-upload-box input {
+  display: block;
+  margin: 10px 0;
+}
+
+.signature-upload-box small {
+  color: #666;
+}
+
+.signature-preview {
+  margin-top: 10px;
+  width: 220px;
+  height: 80px;
+  background: #fff;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signature-preview img {
+  max-width: 200px;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.generator-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.generator-actions button {
+  min-height: 45px;
+  padding: 0 22px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.save-btn {
+  background: #101b3a;
+  color: #fff;
+}
+
+.pdf-btn {
+  background: #f37021;
+  color: #fff;
+}
+
+.clear-btn {
+  background: #e6e8ed;
+  color: #222;
+}
+
+.saved-message {
+  margin-top: 15px;
+  background: #edf8f1;
+  color: #247a43;
+  padding: 11px 14px;
+  border-radius: 7px;
+}
+
+
+/* ================= OFFER PAPER ================= */
+
+.offer-paper {
+  position: relative;
+  width: 794px;
+  min-height: 1123px;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.16);
+}
+
+
+/* ================= HEADER ================= */
+
+.letter-header {
+  min-height: 150px;
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 0.65fr;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 25px 14px;
+  background: #fff;
+}
+
+.brand-area {
+  position: relative;
+  z-index: 2;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-n {
+  font-size: 65px;
+  font-weight: 900;
+  line-height: 0.8;
+  color: #101b3a;
+  position: relative;
+}
+
+.brand-logo strong {
+  display: block;
+  font-size: 45px;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  color: #101b3a;
+}
+
+.brand-logo b {
+  display: block;
+  color: #f37021;
+  font-size: 19px;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-top: 8px;
+  margin-left: 3px;
+  color: #222;
+}
+
+.company-contact {
+  font-size: 9px;
+  line-height: 1.55;
+  padding-top: 5px;
+  color: #17213c;
+  z-index: 3;
+}
+
+.company-contact div {
+  margin-bottom: 3px;
+}
+
+.company-contact .gst {
+  font-weight: 800;
+  margin-top: 5px;
+}
+
+.building-box {
+  min-height: 125px;
+  background:
+    linear-gradient(
+      135deg,
+      #101b3a,
+      #263b72
+    );
+  clip-path: polygon(
+    35% 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.building-text {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  transform: rotate(-8deg);
+}
+
+.orange-line {
+  height: 3px;
+  margin: 0 25px;
+  background: linear-gradient(
+    90deg,
+    #f37021 0%,
+    #f37021 30%,
+    #101b3a 30%,
+    #101b3a 100%
+  );
+}
+
+
+/* ================= META ================= */
+
+.letter-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 48px 8px;
+  font-size: 10px;
+  color: #202020;
+}
+
+
+/* ================= TITLE ================= */
+
+.offer-title {
+  text-align: center;
+  margin-top: 3px;
+}
+
+.offer-title h1 {
+  margin: 0;
+  font-size: 27px;
+  letter-spacing: 1px;
+  color: #101b3a;
+}
+
+.title-decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.title-decoration span {
+  width: 55px;
+  height: 2px;
+  background: #f37021;
+}
+
+.title-decoration span:last-child {
+  background: #101b3a;
+}
+
+.title-decoration b {
+  font-size: 8px;
+  color: #101b3a;
+}
+
+
+/* ================= RECIPIENT ================= */
+
+.recipient {
+  padding: 12px 48px 5px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.recipient strong {
+  display: block;
+  font-size: 13px;
+}
+
+.recipient p {
+  margin: 10px 0 0;
+}
+
+
+/* ================= BODY ================= */
+
+.letter-body {
+  padding: 0 48px 150px;
+  font-size: 11px;
+  line-height: 1.55;
+  color: #151515;
+}
+
+.letter-body p {
+  margin: 8px 0;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 9.5px;
+}
+
+.employee-table td {
+  border: 1px solid #aeb4bf;
+  padding: 5px 7px;
+  vertical-align: middle;
+}
+
+.employee-table td:nth-child(1),
+.employee-table td:nth-child(3) {
+  font-weight: 700;
+  width: 22%;
+  background: #f4f6f9;
+}
+
+.employee-table td:nth-child(2),
+.employee-table td:nth-child(4) {
+  width: 28%;
+}
+
+.letter-body h3 {
+  font-size: 12px;
+  color: #101b3a;
+  margin: 12px 0 5px;
+}
+
+.terms {
+  margin: 5px 0;
+  padding-left: 18px;
+  font-size: 9.7px;
+}
+
+.terms li {
+  margin-bottom: 4px;
+}
+
+.closing-text {
+  margin-top: 10px !important;
+}
+
+
+/* ================= SIGNATURE ================= */
+
+.signature-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 15px;
+}
+
+.company-sign {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 10px;
+}
+
+.company-sign strong {
+  font-size: 11px;
+}
+
+.company-sign span {
+  color: #444;
+}
+
+.signature-image {
+  width: 150px;
+  height: 55px;
+  object-fit: contain;
+  object-position: left center;
+  margin-top: 5px;
+}
+
+.signature-placeholder {
+  width: 180px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #555;
+  font-size: 9px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.employee-sign {
+  font-size: 9px;
+}
+
+.employee-sign p {
+  margin-top: 0;
+}
+
+.signature-line {
+  border-bottom: 1px solid #444;
+  padding-bottom: 4px;
+  margin: 18px 0 8px;
+  width: 200px;
+}
+
+
+/* ================= WATERMARK ================= */
+
+.watermark {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  font-size: 180px;
+  font-weight: 900;
+  color: rgba(16, 27, 58, 0.025);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.letter-body,
+.letter-meta,
+.offer-title,
+.recipient {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ================= FOOTER ================= */
+
+.letter-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+.footer-top {
+  background: #101b3a;
+  color: #fff;
+  min-height: 52px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 8px 40px;
+  gap: 15px;
+}
+
+.footer-top > div {
+  border-right: 1px solid rgba(255,255,255,0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-top > div:last-child {
+  border-right: none;
+}
+
+.footer-top span {
+  color: #f37021;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.footer-top strong {
+  font-size: 8.5px;
+  margin-top: 2px;
+}
+
+.footer-bottom {
+  min-height: 55px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  padding: 7px 40px;
+  border-top: 1px solid #ddd;
+}
+
+.registered-office {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.registered-office span {
+  color: #f37021;
+  font-size: 8px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.registered-office p {
+  margin: 0;
+  font-size: 7.5px;
+  line-height: 1.35;
+  color: #333;
+}
+
+.footer-gst {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  font-size: 8px;
+}
+
+.footer-gst strong {
+  color: #f37021;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+  .offer-generator {
+    padding: 12px;
+  }
+
+  .generator-panel {
+    padding: 18px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-paper {
+    transform-origin: top left;
+    transform: scale(
+      min(
+        1,
+        calc((100vw - 24px) / 794)
+      )
+    );
+
+    margin-bottom: calc(
+      -1123px +
+      ((100vw - 24px) * 1123 / 794)
+    );
+  }
+
+}
+
+@media print {
+
+  .generator-panel {
+    display: none;
+  }
+
+  .offer-generator {
+    padding: 0;
+    background: #fff;
+  }
+
+  .offer-paper {
+    box-shadow: none;
+    margin: 0;
+  }
+}
+
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.brand-logo-image {
+  width: 220px;
+  height: auto;
+  max-height: 80px;
+  object-fit: contain;
+  object-position: left center;
+  display: block;
+}

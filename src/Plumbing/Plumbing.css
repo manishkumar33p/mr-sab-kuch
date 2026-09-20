@@ -1,0 +1,3737 @@
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.plumbing-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+  color: #222;
+}
+
+
+/* =========================================================
+   PLUMBING HERO
+========================================================= */
+
+.plumbing-hero {
+  position: relative;
+  width: 100%;
+  min-height: 720px;
+  overflow: hidden;
+}
+
+.fullscreen-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plumbing-overlay-bg {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.plumbing-overlay {
+  position: relative;
+  z-index: 2;
+
+  min-height: 420px;
+
+  max-width: 1400px;
+  margin: auto;
+
+  padding: 100px 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+
+/* =========================================================
+   LEFT HERO
+========================================================= */
+
+.plumbing-left {
+  width: 55%;
+  color: white;
+}
+
+.plumbing-tag {
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  border: 1px solid rgba(255,255,255,0.5);
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  margin-bottom: 20px;
+}
+
+.plumbing-left h1 {
+  font-size: 58px;
+  line-height: 1.08;
+
+  margin: 0 0 25px;
+
+  font-weight: 800;
+}
+
+.plumbing-left h1 span {
+  display: block;
+
+  color: #f5a623;
+
+  margin-top: 8px;
+}
+
+.plumbing-left p {
+  max-width: 700px;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: rgba(255,255,255,0.9);
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.plumbing-search-box {
+  display: flex;
+
+  max-width: 700px;
+
+  background: white;
+
+  padding: 7px;
+
+  border-radius: 10px;
+
+  gap: 5px;
+}
+
+.plumbing-search-box select,
+.plumbing-search-box input {
+  border: none;
+
+  outline: none;
+
+  padding: 15px;
+
+  font-size: 14px;
+}
+
+.plumbing-search-box select {
+  width: 190px;
+}
+
+.plumbing-search-box input {
+  flex: 1;
+}
+
+.plumbing-search-box button {
+  border: none;
+
+  padding: 0 25px;
+
+  background: #f5a623;
+
+  color: #111;
+
+  font-weight: 700;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.plumbing-buttons {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 25px;
+}
+
+.plumbing-buttons button {
+  padding: 14px 25px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+
+  font-size: 15px;
+}
+
+.plumbing-btn-primary {
+  border: none;
+
+  background: #f5a623;
+
+  color: #111;
+}
+
+.plumbing-btn-secondary {
+  background: transparent;
+
+  color: white;
+
+  border: 1px solid white;
+}
+
+
+/* =========================================================
+   HERO RIGHT
+========================================================= */
+
+.plumbing-right {
+  width: 40%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.plumbing-hero-card {
+  width: 100%;
+
+  max-width: 430px;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.plumbing-hero-card img {
+  width: 100%;
+
+  height: 350px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.plumbing-small-cards {
+  display: flex;
+
+  gap: 15px;
+
+  width: 100%;
+
+  max-width: 430px;
+}
+
+.plumbing-small-card {
+  flex: 1;
+
+  padding: 20px;
+
+  text-align: center;
+
+  background: rgba(255,255,255,0.13);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.25);
+
+  border-radius: 14px;
+
+  color: white;
+}
+
+.plumbing-small-card h3 {
+  margin: 0;
+
+  font-size: 28px;
+
+  color: #f5a623;
+}
+
+.plumbing-small-card p {
+  margin: 5px 0 0;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+  text-align: center;
+
+  padding: 70px 20px 35px;
+}
+
+.section-heading span {
+  color: #f5a623;
+
+  font-weight: 700;
+
+  font-size: 14px;
+
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  font-size: 42px;
+
+  margin: 10px 0;
+}
+
+.section-heading p {
+  color: #666;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   PLUMBING FILTER
+========================================================= */
+
+.plumbing-filters {
+  max-width: 1200px;
+
+  margin: 0 auto 35px;
+
+  padding: 0 20px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.plumbing-filters input {
+  width: 300px;
+
+  padding: 14px 16px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.plumbing-filters input:focus {
+  border-color: #f5a623;
+}
+
+
+/* =========================================================
+   PLUMBING GRID
+========================================================= */
+
+.plumbing-grid {
+  max-width: 1250px;
+
+  margin: auto;
+
+  padding: 0 20px 80px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.service-card {
+  background: white;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  border: 1px solid #eee;
+
+  box-shadow:
+    0 5px 25px rgba(0,0,0,0.07);
+
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.12);
+}
+
+.service-image {
+  width: 100%;
+
+  height: 210px;
+
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.4s;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.06);
+}
+
+.service-content {
+  padding: 20px;
+}
+
+.service-label {
+  display: inline-block;
+
+  font-size: 11px;
+
+  color: #f5a623;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 8px;
+}
+
+.service-content h3 {
+  font-size: 18px;
+
+  margin: 5px 0 10px;
+
+  min-height: 45px;
+}
+
+.service-price {
+  font-size: 20px;
+
+  font-weight: 800;
+
+  margin: 0 0 15px;
+}
+
+.service-actions {
+  display: flex;
+
+  gap: 8px;
+}
+
+.service-actions button {
+  flex: 1;
+
+  padding: 11px 8px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+
+  background: #f5a623;
+}
+
+.service-actions .cart-button {
+  background: #222;
+
+  color: white;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.service-divider {
+  max-width: 1200px;
+
+  margin: 20px auto 0;
+
+  padding: 50px 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+}
+
+.service-divider span {
+  height: 1px;
+
+  background: #ddd;
+
+  flex: 1;
+}
+
+.service-divider h2 {
+  font-size: 22px;
+
+  white-space: nowrap;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   CARPENTER SECTION
+========================================================= */
+
+.carpenter-section {
+  background: #f7f7f7;
+
+  padding: 30px 20px 90px;
+}
+
+
+/* =========================================================
+   CARPENTER HEADING
+========================================================= */
+
+.carpenter-heading {
+  max-width: 900px;
+
+  margin: auto;
+
+  text-align: center;
+
+  padding: 30px 0 45px;
+}
+
+.carpenter-tag {
+  display: inline-block;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #f5a623;
+
+  margin-bottom: 15px;
+}
+
+.carpenter-heading h2 {
+  font-size: 45px;
+
+  margin: 0;
+
+  line-height: 1.15;
+}
+
+.carpenter-heading h2 span {
+  display: block;
+
+  color: #b47a16;
+
+  margin-top: 8px;
+}
+
+.carpenter-heading p {
+  margin-top: 18px;
+
+  color: #666;
+
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   CARPENTER FILTER
+========================================================= */
+
+.carpenter-filter {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 35px;
+}
+
+.carpenter-filter button {
+  padding: 10px 20px;
+
+  background: white;
+
+  border: 1px solid #ddd;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.carpenter-filter button:hover {
+  border-color: #f5a623;
+}
+
+.carpenter-filter .active-category {
+  background: #f5a623;
+
+  border-color: #f5a623;
+
+  color: #111;
+}
+
+
+/* =========================================================
+   CARPENTER GRID
+========================================================= */
+
+.carpenter-grid {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   CARPENTER CARD
+========================================================= */
+
+.carpenter-card {
+  background: white;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 5px 25px rgba(0,0,0,0.07);
+
+  border: 1px solid #eee;
+
+  transition: 0.3s;
+}
+
+.carpenter-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.12);
+}
+
+.carpenter-image {
+  width: 100%;
+
+  height: 220px;
+
+  overflow: hidden;
+}
+
+.carpenter-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.4s;
+}
+
+.carpenter-card:hover
+.carpenter-image img {
+  transform: scale(1.07);
+}
+
+.carpenter-info {
+  padding: 20px;
+}
+
+.carpenter-info > span {
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  color: #b47a16;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.carpenter-info h3 {
+  margin: 8px 0;
+
+  font-size: 19px;
+
+  min-height: 45px;
+}
+
+.carpenter-info p {
+  font-size: 20px;
+
+  font-weight: 800;
+
+  margin: 10px 0 15px;
+}
+
+.carpenter-info button {
+  width: 100%;
+
+  border: none;
+
+  padding: 12px;
+
+  background: #222;
+
+  color: white;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+}
+
+.carpenter-info button:hover {
+  background: #f5a623;
+
+  color: #111;
+}
+
+
+/* =========================================================
+   CARPENTER HIGHLIGHT
+========================================================= */
+
+.carpenter-highlight {
+  max-width: 1000px;
+
+  margin: 70px auto 0;
+
+  text-align: center;
+}
+
+.carpenter-highlight h2 {
+  font-size: 30px;
+
+  margin-bottom: 30px;
+}
+
+.carpenter-highlight-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+.carpenter-highlight-grid div {
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 5px 20px rgba(0,0,0,0.06);
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0,0,0,0.7);
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.modal-box {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 500px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.3);
+
+  animation: modalOpen 0.25s ease;
+}
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}
+
+.modal-close {
+  position: absolute;
+
+  right: 15px;
+
+  top: 12px;
+
+  width: 35px;
+
+  height: 35px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #f1f1f1;
+
+  font-size: 25px;
+
+  cursor: pointer;
+}
+
+.modal-box h2 {
+  margin: 0 40px 5px 0;
+
+  font-size: 25px;
+}
+
+.modal-box > p {
+  color: #f5a623;
+
+  font-size: 19px;
+
+  font-weight: 700;
+
+  margin-bottom: 25px;
+}
+
+.modal-box label {
+  display: block;
+
+  margin: 15px 0 7px;
+
+  font-weight: 700;
+}
+
+.modal-box input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 7px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.modal-box input:focus {
+  border-color: #f5a623;
+}
+
+
+/* =========================================================
+   QUICK HOURS
+========================================================= */
+
+.quick-hours {
+  display: flex;
+
+  gap: 8px;
+
+  flex-wrap: wrap;
+}
+
+.quick-hours button {
+  padding: 10px 15px;
+
+  background: #f5f5f5;
+
+  border: 1px solid #ddd;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+}
+
+.quick-hours .active-hour {
+  background: #f5a623;
+
+  border-color: #f5a623;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   MODAL TOTAL
+========================================================= */
+
+.modal-total {
+  margin-top: 25px;
+
+  padding: 15px;
+
+  background: #f7f7f7;
+
+  border-radius: 8px;
+
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   MODAL ACTIONS
+========================================================= */
+
+.modal-actions {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  flex: 1;
+
+  padding: 13px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+}
+
+.cancel-btn {
+  background: #eee;
+
+  border: none;
+}
+
+.confirm-btn {
+  background: #f5a623;
+
+  border: none;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.service-message {
+  position: fixed;
+
+  right: 25px;
+
+  bottom: 25px;
+
+  z-index: 10000;
+
+  background: #222;
+
+  color: white;
+
+  padding: 15px 22px;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,0.25);
+
+  font-weight: 600;
+}
+
+.no-service {
+  grid-column: 1 / -1;
+
+  text-align: center;
+
+  padding: 60px 20px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .plumbing-overlay {
+    padding: 80px 30px;
+  }
+
+  .plumbing-left h1 {
+    font-size: 45px;
+  }
+
+  .plumbing-grid,
+  .carpenter-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .plumbing-hero {
+    min-height: auto;
+  }
+
+  .plumbing-overlay {
+    min-height: auto;
+
+    padding: 80px 20px 60px;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 40px;
+  }
+
+  .plumbing-left {
+    width: 100%;
+  }
+
+  .plumbing-left h1 {
+    font-size: 36px;
+  }
+
+  .plumbing-left p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .plumbing-search-box {
+    flex-direction: column;
+
+    padding: 10px;
+  }
+
+  .plumbing-search-box select {
+    width: 100%;
+  }
+
+  .plumbing-search-box input {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  .plumbing-search-box button {
+    padding: 14px;
+  }
+
+  .plumbing-buttons {
+    flex-direction: column;
+  }
+
+  .plumbing-buttons button {
+    width: 100%;
+  }
+
+  .plumbing-right {
+    width: 100%;
+  }
+
+  .plumbing-hero-card img {
+    height: 260px;
+  }
+
+  .plumbing-small-cards {
+    max-width: none;
+  }
+
+  .section-heading {
+    padding-top: 50px;
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .plumbing-filters {
+    flex-direction: column;
+
+    padding: 0 20px;
+  }
+
+  .plumbing-filters input {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  .plumbing-grid {
+    grid-template-columns: 1fr;
+
+    padding-bottom: 50px;
+  }
+
+  .service-image {
+    height: 230px;
+  }
+
+  .service-divider {
+    padding: 35px 15px;
+
+    gap: 10px;
+  }
+
+  .service-divider h2 {
+    font-size: 16px;
+  }
+
+  .carpenter-section {
+    padding: 20px 15px 60px;
+  }
+
+  .carpenter-heading {
+    padding: 25px 0 35px;
+  }
+
+  .carpenter-heading h2 {
+    font-size: 32px;
+  }
+
+  .carpenter-heading h2 span {
+    margin-top: 5px;
+  }
+
+  .carpenter-filter {
+    gap: 7px;
+  }
+
+  .carpenter-filter button {
+    padding: 9px 14px;
+
+    font-size: 13px;
+  }
+
+  .carpenter-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .carpenter-image {
+    height: 240px;
+  }
+
+  .carpenter-highlight {
+    margin-top: 50px;
+  }
+
+  .carpenter-highlight-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .carpenter-highlight-grid div {
+    padding: 15px 8px;
+
+    font-size: 13px;
+  }
+
+  .modal-box {
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 25px 20px;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .service-message {
+    left: 15px;
+
+    right: 15px;
+
+    bottom: 15px;
+
+    text-align: center;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .plumbing-left h1 {
+    font-size: 30px;
+  }
+
+  .plumbing-small-card {
+    padding: 15px 8px;
+  }
+
+  .plumbing-small-card h3 {
+    font-size: 24px;
+  }
+
+  .carpenter-heading h2 {
+    font-size: 28px;
+  }
+
+  .carpenter-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* =========================
+     MAIN PAGE
+  ========================= */
+
+  .plumbing-page {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* =========================
+     PLUMBING HERO
+  ========================= */
+
+  .plumbing-hero {
+    position: relative;
+    min-height: auto;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .fullscreen-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  .plumbing-overlay-bg {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.68);
+
+    z-index: 1;
+  }
+
+  .plumbing-overlay {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    min-height: auto;
+
+    padding: 30px 18px 35px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+
+  /* =========================
+     LEFT HERO
+  ========================= */
+
+  .plumbing-left {
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plumbing-tag {
+    display: inline-block;
+
+    width: fit-content;
+
+    font-size: 12px;
+
+    padding: 8px 14px;
+
+    margin-bottom: 14px;
+
+    border-radius: 30px;
+  }
+
+  .plumbing-left h1 {
+    font-size: 40px;
+    line-height: 1.05;
+
+    margin: 0 0 16px;
+
+    word-break: normal;
+  }
+
+  .plumbing-left h1 span {
+    display: block;
+
+    font-size: 40px;
+    line-height: 1.05;
+  }
+
+  .plumbing-left p {
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin: 0 0 20px;
+
+    color: #ffffff;
+  }
+
+
+  /* =========================
+     SEARCH BOX
+  ========================= */
+
+  .plumbing-search-box {
+    width: 100%;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    box-sizing: border-box;
+  }
+
+  .plumbing-search-box select,
+  .plumbing-search-box input,
+  .plumbing-search-box button {
+    width: 100%;
+
+    min-height: 48px;
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+  }
+
+  .plumbing-search-box select {
+    padding: 0 12px;
+  }
+
+  .plumbing-search-box input {
+    padding: 0 14px;
+  }
+
+  .plumbing-search-box button {
+    border: none;
+
+    font-weight: 700;
+
+    cursor: pointer;
+  }
+
+
+  /* =========================
+     HERO BUTTONS
+  ========================= */
+
+  .plumbing-buttons {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 12px;
+  }
+
+  .plumbing-buttons button {
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: 10px 8px;
+
+    font-size: 13px;
+
+    border-radius: 10px;
+
+    white-space: normal;
+  }
+
+
+  /* =========================
+     RIGHT HERO
+  ========================= */
+
+  .plumbing-right {
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .plumbing-hero-card {
+    width: 100%;
+
+    height: 230px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+  }
+
+  .plumbing-hero-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+  }
+
+
+  /* =========================
+     SMALL STAT CARDS
+  ========================= */
+
+  .plumbing-small-cards {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+  }
+
+  .plumbing-small-card {
+    min-height: 90px;
+
+    padding: 15px 8px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    border-radius: 14px;
+  }
+
+  .plumbing-small-card h3 {
+    font-size: 27px;
+
+    margin: 0 0 5px;
+  }
+
+  .plumbing-small-card p {
+    font-size: 12px;
+
+    line-height: 1.3;
+
+    margin: 0;
+  }
+
+
+  /* =========================
+     SECTION HEADING
+  ========================= */
+
+  .section-heading {
+    width: 100%;
+
+    padding: 45px 18px 25px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+  }
+
+  .section-heading span {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+
+    line-height: 1.15;
+
+    margin: 10px 0;
+  }
+
+  .section-heading p {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 0 auto;
+
+    max-width: 340px;
+  }
+
+
+  /* =========================
+     PLUMBING FILTERS
+  ========================= */
+
+  .plumbing-filters {
+    width: 100%;
+
+    padding: 0 18px 25px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .plumbing-filters input {
+    width: 100%;
+
+    min-height: 48px;
+
+    box-sizing: border-box;
+
+    padding: 0 14px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+  }
+
+
+  /* =========================
+     PLUMBING GRID
+  ========================= */
+
+  .plumbing-grid {
+    width: 100%;
+
+    padding: 0 15px 40px;
+
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .service-card {
+    width: 100%;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+  }
+
+  .service-image {
+    width: 100%;
+
+    height: 210px;
+  }
+
+  .service-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+  }
+
+  .service-content {
+    padding: 16px;
+  }
+
+  .service-content h3 {
+    font-size: 18px;
+
+    line-height: 1.3;
+
+    margin: 7px 0;
+  }
+
+  .service-price {
+    font-size: 18px;
+
+    margin: 8px 0 14px;
+  }
+
+  .service-actions {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+  }
+
+  .service-actions button {
+    width: 100%;
+
+    min-height: 44px;
+
+    padding: 8px 5px;
+
+    font-size: 12px;
+
+    border-radius: 8px;
+  }
+
+
+  /* =========================
+     NO SERVICE
+  ========================= */
+
+  .no-service {
+    width: 100%;
+
+    padding: 40px 15px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+  }
+
+  .no-service h2 {
+    font-size: 20px;
+  }
+
+
+  /* =========================
+     DIVIDER
+  ========================= */
+
+  .service-divider {
+    width: 100%;
+
+    padding: 35px 15px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+  }
+
+  .service-divider span {
+    flex: 1;
+  }
+
+  .service-divider h2 {
+    font-size: 13px;
+
+    text-align: center;
+
+    white-space: nowrap;
+  }
+
+
+  /* =========================
+     CARPENTER SECTION
+  ========================= */
+
+  .carpenter-section {
+    width: 100%;
+
+    padding: 35px 15px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+  }
+
+  .carpenter-heading {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .carpenter-tag {
+    font-size: 11px;
+  }
+
+  .carpenter-heading h2 {
+    font-size: 30px;
+
+    line-height: 1.15;
+
+    margin: 12px 0;
+  }
+
+  .carpenter-heading h2 span {
+    display: block;
+  }
+
+  .carpenter-heading p {
+    font-size: 14px;
+
+    line-height: 1.5;
+  }
+
+
+  /* =========================
+     CARPENTER FILTER
+  ========================= */
+
+  .carpenter-filter {
+    width: 100%;
+
+    display: flex;
+
+    gap: 8px;
+
+    overflow-x: auto;
+
+    padding: 15px 0;
+
+    scrollbar-width: none;
+  }
+
+  .carpenter-filter::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carpenter-filter button {
+    flex: 0 0 auto;
+
+    min-height: 40px;
+
+    padding: 8px 15px;
+
+    font-size: 13px;
+
+    border-radius: 20px;
+
+    white-space: nowrap;
+  }
+
+
+  /* =========================
+     CARPENTER GRID
+  ========================= */
+
+  .carpenter-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .carpenter-card {
+    width: 100%;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+  }
+
+  .carpenter-image {
+    width: 100%;
+
+    height: 210px;
+  }
+
+  .carpenter-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+  }
+
+  .carpenter-info {
+    padding: 16px;
+  }
+
+  .carpenter-info h3 {
+    font-size: 18px;
+
+    line-height: 1.3;
+  }
+
+  .carpenter-info button {
+    width: 100%;
+
+    min-height: 46px;
+
+    margin-top: 10px;
+
+    border-radius: 9px;
+  }
+
+
+  /* =========================
+     CARPENTER HIGHLIGHT
+  ========================= */
+
+  .carpenter-highlight {
+    width: 100%;
+
+    margin-top: 35px;
+
+    padding: 25px 18px;
+
+    box-sizing: border-box;
+
+    border-radius: 18px;
+  }
+
+  .carpenter-highlight h2 {
+    font-size: 23px;
+
+    text-align: center;
+
+    line-height: 1.3;
+  }
+
+  .carpenter-highlight-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    margin-top: 18px;
+  }
+
+  .carpenter-highlight-grid > div {
+    padding: 12px;
+
+    font-size: 14px;
+
+    border-radius: 9px;
+  }
+
+
+  /* =========================
+     BOOKING MODAL
+  ========================= */
+
+  .modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow-y: auto;
+  }
+
+  .modal-box {
+    width: 100%;
+
+    max-width: 430px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    box-sizing: border-box;
+
+    padding: 22px 18px;
+
+    border-radius: 18px;
+
+    position: relative;
+  }
+
+  .modal-box h2 {
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    padding-right: 30px;
+  }
+
+  .modal-box input {
+    width: 100%;
+
+    min-height: 46px;
+
+    box-sizing: border-box;
+  }
+
+  .modal-actions {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+  }
+
+  .modal-actions button {
+    width: 100%;
+
+    min-height: 46px;
+
+    font-size: 13px;
+  }
+
+  .quick-hours {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 5px;
+  }
+
+  .quick-hours button {
+    min-height: 40px;
+
+    padding: 5px;
+
+    font-size: 12px;
+  }
+
+
+  /* =========================
+     MESSAGE
+  ========================= */
+
+  .service-message {
+    position: fixed;
+
+    left: 15px;
+    right: 15px;
+
+    bottom: 20px;
+
+    z-index: 100000;
+
+    text-align: center;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .plumbing-overlay {
+    padding: 25px 14px 30px;
+  }
+
+  .plumbing-left h1,
+  .plumbing-left h1 span {
+    font-size: 34px;
+  }
+
+  .plumbing-left p {
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+  .plumbing-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .plumbing-hero-card {
+    height: 200px;
+  }
+
+  .plumbing-small-card {
+    min-height: 80px;
+  }
+
+  .plumbing-small-card h3 {
+    font-size: 24px;
+  }
+
+  .section-heading {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .section-heading h2 {
+    font-size: 27px;
+  }
+
+  .plumbing-grid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .service-image {
+    height: 190px;
+  }
+
+  .service-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .service-actions button {
+    min-height: 46px;
+  }
+
+  .carpenter-section {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .carpenter-heading h2 {
+    font-size: 27px;
+  }
+
+  .carpenter-image {
+    height: 190px;
+  }
+
+  .modal-overlay {
+    padding: 10px;
+  }
+
+  .modal-box {
+    max-height: 92vh;
+
+    padding: 20px 15px;
+  }
+
+  .modal-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-hours {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+
+
+
+
+
+:root {
+  --qf-navy: #071f4b;
+  --qf-navy-2: #0d2f68;
+  --qf-orange: #ff4b12;
+  --qf-orange-2: #ff6a00;
+  --qf-white: #ffffff;
+  --qf-light: #f5f7fb;
+  --qf-border: #d9deea;
+  --qf-text: #10234b;
+  --qf-muted: #667085;
+  --qf-shadow: 0 12px 35px rgba(7, 31, 75, 0.12);
+  --qf-radius: 18px;
+}
+
+/* ================= GLOBAL ================= */
+
+.plumbing-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  color: var(--qf-text);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.plumbing-page *,
+.plumbing-page *::before,
+.plumbing-page *::after {
+  box-sizing: border-box;
+}
+
+.plumbing-page button,
+.plumbing-page input {
+  font: inherit;
+}
+
+.plumbing-page button {
+  cursor: pointer;
+}
+
+/* ================= HERO ================= */
+
+.plumbing-section {
+  width: 100%;
+}
+
+.plumbing-hero {
+  position: relative;
+  min-height: 520px;
+  background:
+    linear-gradient(100deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.95) 47%, rgba(7,31,75,.10) 100%),
+    linear-gradient(135deg, #ffffff 0%, #f4f7fc 100%);
+  overflow: hidden;
+}
+
+.plumbing-overlay-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 82% 45%, rgba(255, 75, 18, .10), transparent 25%),
+    radial-gradient(circle at 70% 90%, rgba(7, 31, 75, .10), transparent 30%);
+}
+
+.plumbing-overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  min-height: 520px;
+  margin: 0 auto;
+  padding: 70px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.plumbing-left {
+  width: min(680px, 100%);
+}
+
+.plumbing-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 30px;
+  background: var(--qf-navy);
+  color: #fff;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 1.4px;
+  margin-bottom: 18px;
+}
+
+.plumbing-left h1 {
+  margin: 0;
+  color: var(--qf-navy);
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: .98;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.plumbing-left h1 span {
+  display: block;
+  color: var(--qf-orange);
+  margin-top: 8px;
+}
+
+.plumbing-left > p {
+  max-width: 600px;
+  margin: 24px 0;
+  color: #344054;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+/* ================= SERVICE PILLS ================= */
+
+.quickfix-service-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 22px 0;
+}
+
+.quickfix-service-pills span {
+  padding: 9px 13px;
+  border: 1px solid #dce2ee;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--qf-navy);
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 0 5px 15px rgba(7, 31, 75, .06);
+}
+
+/* ================= HERO SEARCH ================= */
+
+.plumbing-search-box {
+  width: min(610px, 100%);
+  min-height: 58px;
+  display: flex;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid #e1e5ed;
+  border-radius: 14px;
+  box-shadow: var(--qf-shadow);
+}
+
+.plumbing-search-box input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  padding: 0 16px;
+  color: var(--qf-text);
+  background: transparent;
+}
+
+.plumbing-search-box input::placeholder {
+  color: #98a2b3;
+}
+
+.plumbing-search-box button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0 28px;
+  background: var(--qf-orange);
+  color: #fff;
+  font-weight: 800;
+  transition: .25s ease;
+}
+
+.plumbing-search-box button:hover {
+  background: #e83e09;
+  transform: translateY(-1px);
+}
+
+/* ================= HERO BUTTONS ================= */
+
+.plumbing-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.plumbing-btn-primary,
+.plumbing-btn-secondary {
+  min-height: 50px;
+  padding: 0 24px;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: .25s ease;
+}
+
+.plumbing-btn-primary {
+  border: 2px solid var(--qf-orange);
+  background: var(--qf-orange);
+  color: #fff;
+}
+
+.plumbing-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 22px rgba(255, 75, 18, .25);
+}
+
+.plumbing-btn-secondary {
+  border: 2px solid var(--qf-navy);
+  background: #fff;
+  color: var(--qf-navy);
+}
+
+.plumbing-btn-secondary:hover {
+  background: var(--qf-navy);
+  color: #fff;
+}
+
+/* ================= HERO RIGHT ================= */
+
+.plumbing-right {
+  width: min(440px, 100%);
+}
+
+.quickfix-hero-service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.quickfix-hero-service-grid div {
+  min-height: 145px;
+  padding: 25px 16px;
+  border-radius: 22px;
+  background: rgba(255,255,255,.92);
+  border: 1px solid #e0e5ef;
+  box-shadow: var(--qf-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: var(--qf-orange);
+  font-size: 40px;
+  text-align: center;
+}
+
+.quickfix-hero-service-grid div:nth-child(2),
+.quickfix-hero-service-grid div:nth-child(4) {
+  color: var(--qf-navy);
+}
+
+.quickfix-hero-service-grid div:last-child {
+  grid-column: 1 / -1;
+}
+
+.quickfix-hero-service-grid strong {
+  color: var(--qf-navy);
+  font-size: 14px;
+  letter-spacing: .7px;
+}
+
+/* ================= TRUST BAR ================= */
+
+.quickfix-trust-bar {
+  position: relative;
+  z-index: 5;
+  max-width: 1300px;
+  margin: -30px auto 0;
+  min-height: 82px;
+  padding: 12px 25px;
+  border-radius: 15px;
+  background: var(--qf-navy);
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  box-shadow: 0 14px 35px rgba(7, 31, 75, .22);
+}
+
+.quickfix-trust-bar div {
+  min-height: 48px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-right: 1px solid rgba(255,255,255,.35);
+  font-size: 14px;
+  text-align: center;
+}
+
+.quickfix-trust-bar div:last-child {
+  border-right: 0;
+}
+
+.quickfix-trust-bar div::first-letter {
+  font-size: 24px;
+}
+
+/* ================= SECTION HEADING ================= */
+
+.section-heading {
+  max-width: 1200px;
+  margin: 75px auto 28px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.section-heading span {
+  color: var(--qf-orange);
+  font-weight: 900;
+  letter-spacing: 1.8px;
+  font-size: 13px;
+}
+
+.section-heading h2 {
+  margin: 8px 0 8px;
+  color: var(--qf-navy);
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.section-heading p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--qf-muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ================= CATEGORY FILTER ================= */
+
+.quickfix-category-filter {
+  max-width: 1250px;
+  margin: 25px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quickfix-category-filter button {
+  border: 1px solid #d7ddea;
+  border-radius: 999px;
+  padding: 11px 17px;
+  background: #fff;
+  color: var(--qf-navy);
+  font-size: 13px;
+  font-weight: 800;
+  transition: .22s ease;
+}
+
+.quickfix-category-filter button:hover {
+  border-color: var(--qf-orange);
+  color: var(--qf-orange);
+  transform: translateY(-1px);
+}
+
+.quickfix-category-filter .active-category {
+  border-color: var(--qf-navy);
+  background: var(--qf-navy);
+  color: #fff;
+}
+
+/* ================= FILTERS ================= */
+
+.plumbing-filters {
+  max-width: 1250px;
+  margin: 20px auto 35px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 230px;
+  gap: 12px;
+}
+
+.plumbing-filters input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 16px;
+  border: 1px solid #d9deea;
+  border-radius: 11px;
+  outline: none;
+  background: #fff;
+  color: var(--qf-text);
+  transition: .2s ease;
+}
+
+.plumbing-filters input:focus {
+  border-color: var(--qf-orange);
+  box-shadow: 0 0 0 4px rgba(255,75,18,.08);
+}
+
+/* ================= SERVICE GRID ================= */
+
+.plumbing-grid {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px 70px;
+}
+
+.quickfix-all-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* ================= SERVICE CARD ================= */
+
+.service-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e3e7ef;
+  border-radius: var(--qf-radius);
+  box-shadow: 0 7px 25px rgba(7,31,75,.07);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 17px 38px rgba(7,31,75,.14);
+}
+
+.service-image {
+  position: relative;
+  width: 100%;
+  height: 185px;
+  overflow: hidden;
+  background: #eef2f7;
+}
+
+.service-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.06);
+}
+
+.service-content {
+  padding: 17px;
+}
+
+.service-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--qf-orange);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+}
+
+.service-content h3 {
+  min-height: 44px;
+  margin: 0;
+  color: var(--qf-navy);
+  font-size: 17px;
+  line-height: 1.3;
+  font-weight: 850;
+}
+
+.service-price {
+  margin: 12px 0 15px;
+  color: var(--qf-orange);
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.service-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.service-actions button {
+  min-height: 42px;
+  border-radius: 9px;
+  border: 1px solid var(--qf-orange);
+  background: var(--qf-orange);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  transition: .2s ease;
+}
+
+.service-actions button:hover {
+  background: #e83e09;
+}
+
+.service-actions .cart-button {
+  border-color: var(--qf-navy);
+  background: #fff;
+  color: var(--qf-navy);
+}
+
+.service-actions .cart-button:hover {
+  background: var(--qf-navy);
+  color: #fff;
+}
+
+/* ================= NO SERVICE ================= */
+
+.no-service {
+  grid-column: 1 / -1;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #ccd3df;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.no-service h2 {
+  margin: 0 0 7px;
+  color: var(--qf-navy);
+}
+
+.no-service p {
+  margin: 0;
+  color: var(--qf-muted);
+}
+
+/* ================= FIVE SERVICES ================= */
+
+.quickfix-five-services {
+  padding: 30px 20px 80px;
+  background: #f7f9fc;
+}
+
+.quickfix-five-services .section-heading {
+  margin-top: 25px;
+}
+
+.quickfix-five-grid {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.quickfix-category-card {
+  min-height: 235px;
+  padding: 25px 18px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid #e1e5ed;
+  box-shadow: 0 8px 25px rgba(7,31,75,.07);
+  cursor: pointer;
+  text-align: center;
+  transition: .25s ease;
+}
+
+.quickfix-category-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 17px 35px rgba(7,31,75,.13);
+}
+
+.quickfix-category-card.orange {
+  border-top: 5px solid var(--qf-orange);
+}
+
+.quickfix-category-card.navy {
+  border-top: 5px solid var(--qf-navy);
+}
+
+.quickfix-category-icon {
+  width: 66px;
+  height: 66px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: var(--qf-navy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 31px;
+}
+
+.quickfix-category-card.orange .quickfix-category-icon {
+  background: var(--qf-orange);
+}
+
+.quickfix-category-card h3 {
+  margin: 0 0 9px;
+  color: var(--qf-navy);
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 900;
+}
+
+.quickfix-category-card p {
+  margin: 0 0 14px;
+  min-height: 58px;
+  color: var(--qf-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.quickfix-category-card strong {
+  color: var(--qf-orange);
+  font-size: 13px;
+}
+
+/* ================= BOOKING SECTION ================= */
+
+.quickfix-booking-section {
+  max-width: 1250px;
+  margin: 55px auto;
+  padding: 35px;
+  border-radius: 22px;
+  background: var(--qf-navy);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.quickfix-booking-section h2 {
+  margin: 0 0 25px;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.quickfix-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.quickfix-steps div {
+  min-height: 120px;
+  padding: 18px 12px;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 14px;
+  background: rgba(255,255,255,.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.quickfix-steps span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--qf-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.quickfix-steps strong {
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.quickfix-urgent-box {
+  padding: 30px;
+  border-radius: 18px;
+  background: #fff;
+  color: var(--qf-navy);
+}
+
+.quickfix-urgent-box h2 {
+  margin-bottom: 8px;
+  color: var(--qf-orange);
+  font-size: 26px;
+}
+
+.quickfix-urgent-box p {
+  margin: 0 0 15px;
+  font-weight: 800;
+}
+
+.quickfix-urgent-box strong {
+  display: inline-flex;
+  padding: 11px 16px;
+  border-radius: 8px;
+  background: var(--qf-orange);
+  color: #fff;
+  font-size: 14px;
+}
+
+/* ================= BOOKING MODAL ================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  padding: 20px;
+  background: rgba(3, 12, 29, .72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  backdrop-filter: blur(4px);
+}
+
+.modal-box {
+  position: relative;
+  width: min(500px, 100%);
+  padding: 32px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 25px 70px rgba(0,0,0,.25);
+  animation: quickfixModalIn .25s ease;
+}
+
+@keyframes quickfixModalIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: #f1f3f7;
+  color: var(--qf-navy);
+  font-size: 25px;
+  line-height: 1;
+}
+
+.modal-box h2 {
+  margin: 4px 35px 5px 0;
+  color: var(--qf-navy);
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+.modal-box > p {
+  margin: 0 0 24px;
+  color: var(--qf-orange);
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.modal-box label {
+  display: block;
+  margin: 14px 0 7px;
+  color: var(--qf-navy);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.modal-box input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 13px;
+  border: 1px solid #d8deea;
+  border-radius: 9px;
+  outline: none;
+}
+
+.modal-box input:focus {
+  border-color: var(--qf-orange);
+  box-shadow: 0 0 0 4px rgba(255,75,18,.08);
+}
+
+.modal-total {
+  margin: 22px 0 15px;
+  color: var(--qf-navy);
+  font-size: 19px;
+}
+
+.modal-actions {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 10px;
+}
+
+.modal-actions button {
+  min-height: 48px;
+  border-radius: 9px;
+  font-weight: 800;
+}
+
+.cancel-btn {
+  border: 1px solid #ccd3df;
+  background: #fff;
+  color: var(--qf-navy);
+}
+
+.confirm-btn {
+  border: 1px solid var(--qf-orange);
+  background: var(--qf-orange);
+  color: #fff;
+}
+
+/* ================= MESSAGE ================= */
+
+.service-message {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 10000;
+  max-width: calc(100vw - 44px);
+  padding: 14px 20px;
+  border-radius: 10px;
+  background: var(--qf-navy);
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(0,0,0,.2);
+  font-size: 14px;
+  font-weight: 800;
+  animation: quickfixToast .25s ease;
+}
+
+@keyframes quickfixToast {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+  .plumbing-overlay {
+    padding: 55px 4%;
+  }
+
+  .quickfix-all-services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .quickfix-five-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quickfix-booking-section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .plumbing-hero,
+  .plumbing-overlay {
+    min-height: auto;
+  }
+
+  .plumbing-overlay {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    padding: 55px 25px 75px;
+  }
+
+  .plumbing-right {
+    width: 100%;
+  }
+
+  .quickfix-hero-service-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .quickfix-hero-service-grid div {
+    min-height: 110px;
+    padding: 15px 7px;
+    font-size: 27px;
+  }
+
+  .quickfix-hero-service-grid div:last-child {
+    grid-column: auto;
+  }
+
+  .quickfix-hero-service-grid strong {
+    font-size: 10px;
+  }
+
+  .quickfix-trust-bar {
+    margin: -25px 20px 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quickfix-trust-bar div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .quickfix-trust-bar div:nth-child(-n+2) {
+    border-bottom: 1px solid rgba(255,255,255,.25);
+  }
+
+  .plumbing-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .quickfix-all-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quickfix-booking-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .plumbing-left h1 {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .plumbing-left > p {
+    font-size: 15px;
+  }
+
+  .plumbing-search-box {
+    flex-direction: column;
+    padding: 7px;
+  }
+
+  .plumbing-search-box input {
+    min-height: 47px;
+  }
+
+  .plumbing-search-box button {
+    min-height: 45px;
+  }
+
+  .plumbing-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .quickfix-hero-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quickfix-hero-service-grid div:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .quickfix-trust-bar {
+    grid-template-columns: 1fr;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .quickfix-trust-bar div {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.25);
+  }
+
+  .quickfix-trust-bar div:last-child {
+    border-bottom: 0;
+  }
+
+  .section-heading {
+    margin-top: 55px;
+  }
+
+  .quickfix-category-filter {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 6px;
+  }
+
+  .quickfix-category-filter button {
+    flex: 0 0 auto;
+  }
+
+  .quickfix-all-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-image {
+    height: 220px;
+  }
+
+  .quickfix-five-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quickfix-booking-section {
+    margin: 35px 12px;
+    padding: 25px 18px;
+  }
+
+  .quickfix-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-box {
+    padding: 25px 20px;
+  }
+
+  .modal-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .service-message {
+    right: 12px;
+    bottom: 12px;
+    max-width: calc(100vw - 24px);
+  }
+}
+
+/* ================= REDUCED MOTION ================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .plumbing-page *,
+  .plumbing-page *::before,
+  .plumbing-page *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+
+
+/* =====================================================
+   NISS QUICKFIX - TEXT / BUTTON COLOR FIX
+   ===================================================== */
+
+/* Normal text selection ko controlled rakhein */
+.plumbing-page ::selection {
+  background: #ff4b12;
+  color: #ffffff;
+}
+
+/* Hero ke normal text colors */
+.plumbing-page .plumbing-left h1 {
+  color: #071f4b !important;
+}
+
+.plumbing-page .plumbing-left h1 span {
+  color: #ff4b12 !important;
+}
+
+.plumbing-page .plumbing-left > p {
+  color: #344054 !important;
+}
+
+/* QUICKFIX TAG */
+.plumbing-page .plumbing-tag {
+  background: #071f4b !important;
+  color: #ffffff !important;
+}
+
+/* Service pills */
+.plumbing-page .quickfix-service-pills span {
+  background: #ffffff !important;
+  color: #071f4b !important;
+  border: 1px solid #dce2ee;
+}
+
+/* Hero service boxes */
+.plumbing-page .quickfix-hero-service-grid div {
+  background: #ffffff !important;
+  color: #071f4b !important;
+}
+
+.plumbing-page .quickfix-hero-service-grid div strong {
+  color: #071f4b !important;
+}
+
+/* ================= SEARCH ================= */
+
+.plumbing-page .plumbing-search-box {
+  background: #ffffff !important;
+}
+
+.plumbing-page .plumbing-search-box input {
+  background: #ffffff !important;
+  color: #071f4b !important;
+}
+
+.plumbing-page .plumbing-search-box input::placeholder {
+  color: #98a2b3 !important;
+}
+
+.plumbing-page .plumbing-search-box button {
+  background: #ff4b12 !important;
+  color: #ffffff !important;
+}
+
+/* ================= HERO BUTTONS ================= */
+
+.plumbing-page .plumbing-btn-primary {
+  background: #ff4b12 !important;
+  border-color: #ff4b12 !important;
+  color: #ffffff !important;
+}
+
+.plumbing-page .plumbing-btn-secondary {
+  background: #ffffff !important;
+  border-color: #071f4b !important;
+  color: #071f4b !important;
+}
+
+/* ================= CATEGORY FILTER ================= */
+
+.plumbing-page .quickfix-category-filter button {
+  background: #ffffff !important;
+  color: #071f4b !important;
+  border-color: #d7ddea !important;
+}
+
+.plumbing-page .quickfix-category-filter button.active-category {
+  background: #071f4b !important;
+  color: #ffffff !important;
+  border-color: #071f4b !important;
+}
+
+/* ================= FILTER INPUTS ================= */
+
+.plumbing-page .plumbing-filters input {
+  background: #ffffff !important;
+  color: #071f4b !important;
+}
+
+.plumbing-page .plumbing-filters input::placeholder {
+  color: #98a2b3 !important;
+}
+
+/* ================= SERVICE CARD ================= */
+
+.plumbing-page .service-card {
+  background: #ffffff !important;
+}
+
+.plumbing-page .service-content {
+  background: #ffffff !important;
+}
+
+.plumbing-page .service-label {
+  color: #ff4b12 !important;
+}
+
+.plumbing-page .service-content h3 {
+  color: #071f4b !important;
+}
+
+.plumbing-page .service-price {
+  color: #ff4b12 !important;
+}
+
+/* ================= BOOK NOW ================= */
+
+.plumbing-page .service-actions button {
+  background: #ff4b12 !important;
+  border-color: #ff4b12 !important;
+  color: #ffffff !important;
+}
+
+.plumbing-page .service-actions button:hover {
+  background: #e83e09 !important;
+  color: #ffffff !important;
+}
+
+/* ADD TO CART */
+.plumbing-page .service-actions .cart-button {
+  background: #ffffff !important;
+  border-color: #071f4b !important;
+  color: #071f4b !important;
+}
+
+.plumbing-page .service-actions .cart-button:hover {
+  background: #071f4b !important;
+  color: #ffffff !important;
+}
+
+/* ================= FIVE SERVICE CARDS ================= */
+
+.plumbing-page .quickfix-category-card {
+  background: #ffffff !important;
+  color: #071f4b !important;
+}
+
+.plumbing-page .quickfix-category-card h3 {
+  color: #071f4b !important;
+}
+
+.plumbing-page .quickfix-category-card p {
+  color: #667085 !important;
+}
+
+.plumbing-page .quickfix-category-card strong {
+  color: #ff4b12 !important;
+}
+
+/* ================= BOOKING MODAL ================= */
+
+.plumbing-page .modal-box {
+  background: #ffffff !important;
+  color: #071f4b !important;
+}
+
+.plumbing-page .modal-box h2 {
+  color: #071f4b !important;
+}
+
+.plumbing-page .modal-box > p {
+  color: #ff4b12 !important;
+}
+
+.plumbing-page .modal-box label {
+  color: #071f4b !important;
+}
+
+.plumbing-page .modal-box input {
+  background: #ffffff !important;
+  color: #071f4b !important;
+}
+
+.plumbing-page .modal-total {
+  color: #071f4b !important;
+}
+
+/* Modal buttons */
+.plumbing-page .cancel-btn {
+  background: #ffffff !important;
+  color: #071f4b !important;
+  border-color: #ccd3df !important;
+}
+
+.plumbing-page .confirm-btn {
+  background: #ff4b12 !important;
+  color: #ffffff !important;
+  border-color: #ff4b12 !important;
+}
+
+/* ================= IMPORTANT ================= */
+
+/* Browser ke accidental text-selection effect ko remove
+   karne ke liye page ke clickable UI par selection disable */
+.plumbing-page button,
+.plumbing-page .service-card,
+.plumbing-page .quickfix-category-card,
+.plumbing-page .quickfix-service-pills span,
+.plumbing-page .quickfix-hero-service-grid div {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+/* =========================================================
+   NISS QUICKFIX - FINAL BACKGROUND + CART MESSAGE FIX
+   ========================================================= */
+
+/* ================= BOOK SERVICE SECTION ================= */
+
+.plumbing-page .quickfix-booking-section {
+  width: calc(100% - 40px) !important;
+  max-width: 1250px !important;
+  margin: 55px auto !important;
+  padding: 35px !important;
+
+  background: #071f4b !important;
+  color: #ffffff !important;
+
+  border-radius: 22px !important;
+
+  display: grid !important;
+  grid-template-columns: 1.5fr 1fr !important;
+  gap: 35px !important;
+  align-items: center !important;
+
+  box-shadow: 0 14px 35px rgba(7, 31, 75, 0.18) !important;
+}
+
+/* Book Service heading */
+.plumbing-page .quickfix-booking-section h2 {
+  color: #ffffff !important;
+  background: transparent !important;
+  margin: 0 0 25px !important;
+  font-size: 28px !important;
+  font-weight: 900 !important;
+}
+
+/* Steps */
+.plumbing-page .quickfix-steps {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 15px !important;
+}
+
+.plumbing-page .quickfix-steps div {
+  min-height: 120px !important;
+  padding: 18px 12px !important;
+
+  border: 1px solid rgba(255,255,255,.20) !important;
+  border-radius: 14px !important;
+
+  background: rgba(255,255,255,.07) !important;
+  color: #ffffff !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+
+  text-align: center !important;
+}
+
+.plumbing-page .quickfix-steps div span {
+  width: 40px !important;
+  height: 40px !important;
+
+  border-radius: 50% !important;
+  background: #ff4b12 !important;
+  color: #ffffff !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  font-size: 18px !important;
+  font-weight: 900 !important;
+}
+
+.plumbing-page .quickfix-steps div strong {
+  color: #ffffff !important;
+  background: transparent !important;
+  font-size: 11px !important;
+  line-height: 1.4 !important;
+}
+
+/* ================= URGENT SERVICE BOX ================= */
+
+.plumbing-page .quickfix-urgent-box {
+  padding: 30px !important;
+
+  border-radius: 18px !important;
+  background: #ffffff !important;
+  color: #071f4b !important;
+}
+
+.plumbing-page .quickfix-urgent-box h2 {
+  color: #ff4b12 !important;
+  background: transparent !important;
+  margin: 0 0 8px !important;
+  font-size: 26px !important;
+}
+
+.plumbing-page .quickfix-urgent-box p {
+  color: #071f4b !important;
+  background: transparent !important;
+  margin: 0 0 15px !important;
+  font-weight: 800 !important;
+}
+
+.plumbing-page .quickfix-urgent-box strong {
+  display: inline-flex !important;
+  padding: 11px 16px !important;
+
+  border-radius: 8px !important;
+  background: #ff4b12 !important;
+  color: #ffffff !important;
+
+  font-size: 14px !important;
+}
+
+
+/* =========================================================
+   ADD TO CART SUCCESS MESSAGE
+   ========================================================= */
+
+.plumbing-page .service-message {
+  position: fixed !important;
+  right: 22px !important;
+  bottom: 22px !important;
+  z-index: 10000 !important;
+
+  padding: 14px 22px !important;
+
+  background: #16a34a !important;
+  color: #ffffff !important;
+
+  border: 1px solid #15803d !important;
+  border-radius: 10px !important;
+
+  box-shadow: 0 10px 28px rgba(22, 163, 74, .30) !important;
+
+  font-size: 14px !important;
+  font-weight: 800 !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Message ke andar ka text bhi green background par white */
+.plumbing-page .service-message * {
+  color: #ffffff !important;
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   NORMAL TEXT COLOR FIX
+   ========================================================= */
+
+/* Headings */
+.plumbing-page h1,
+.plumbing-page h2,
+.plumbing-page h3,
+.plumbing-page h4,
+.plumbing-page p,
+.plumbing-page strong,
+.plumbing-page span {
+  /* inherited white ko uncontrolled hone se roke */
+}
+
+/* Service cards */
+.plumbing-page .service-content h3 {
+  color: #071f4b !important;
+  background: transparent !important;
+}
+
+.plumbing-page .service-content p {
+  color: #667085 !important;
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   BUTTON COLORS
+   ========================================================= */
+
+.plumbing-page .service-actions button:first-child {
+  background: #ff4b12 !important;
+  color: #ffffff !important;
+  border-color: #ff4b12 !important;
+}
+
+.plumbing-page .service-actions button:first-child:hover {
+  background: #e83e09 !important;
+  color: #ffffff !important;
+}
+
+.plumbing-page .service-actions .cart-button {
+  background: #ffffff !important;
+  color: #071f4b !important;
+  border-color: #071f4b !important;
+}
+
+.plumbing-page .service-actions .cart-button:hover {
+  background: #071f4b !important;
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   REMOVE UNWANTED TEXT HIGHLIGHT LOOK
+   ========================================================= */
+
+.plumbing-page .quickfix-booking-section,
+.plumbing-page .quickfix-booking-section h2,
+.plumbing-page .quickfix-booking-section p,
+.plumbing-page .quickfix-booking-section strong,
+.plumbing-page .quickfix-urgent-box {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+  .plumbing-page .quickfix-booking-section {
+    grid-template-columns: 1fr !important;
+    margin: 35px 20px !important;
+    width: calc(100% - 40px) !important;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .plumbing-page .quickfix-booking-section {
+    padding: 25px 18px !important;
+    margin: 30px 12px !important;
+    width: calc(100% - 24px) !important;
+  }
+
+  .plumbing-page .quickfix-steps {
+    grid-template-columns: 1fr !important;
+  }
+
+  .plumbing-page .quickfix-urgent-box {
+    padding: 22px !important;
+  }
+
+  .plumbing-page .service-message {
+    right: 12px !important;
+    bottom: 12px !important;
+    max-width: calc(100% - 24px) !important;
+  }
+}

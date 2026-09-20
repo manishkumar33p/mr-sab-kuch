@@ -1,0 +1,1268 @@
+/* =========================================================
+   NISS CATERING SYSTEM
+   ========================================================= */
+
+.catering-page {
+  min-height: 100vh;
+  background: #f8faf7;
+  color: #10291c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.catering-hero {
+  position: relative;
+  min-height: 650px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catering-hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catering-video-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 35, 20, 0.94),
+      rgba(0, 55, 30, 0.72),
+      rgba(0, 0, 0, 0.28)
+    );
+}
+
+.catering-hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(1200px, 92%);
+  color: white;
+  padding: 100px 0 160px;
+}
+
+.catering-tag {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid #ff6b1a;
+  border-radius: 30px;
+  color: #ff8a3d;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+
+.catering-hero-content h1 {
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.05;
+  max-width: 800px;
+  margin: 0 0 25px;
+  font-weight: 800;
+}
+
+.catering-hero-content h1 span {
+  display: block;
+  color: #ff6b1a;
+}
+
+.catering-hero-content p {
+  max-width: 680px;
+  font-size: 19px;
+  line-height: 1.7;
+  color: #edf6f0;
+}
+
+.catering-hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.catering-primary-btn,
+.catering-secondary-btn {
+  border: none;
+  padding: 15px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.catering-primary-btn {
+  background: #ff6b1a;
+  color: white;
+}
+
+.catering-primary-btn:hover {
+  background: #e95508;
+  transform: translateY(-2px);
+}
+
+.catering-secondary-btn {
+  background: white;
+  color: #073d25;
+}
+
+.catering-secondary-btn:hover {
+  background: #f1f1f1;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   HERO STATS
+   ========================================================= */
+
+.catering-stats {
+  position: absolute;
+  z-index: 3;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1150px, 92%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(3, 52, 30, 0.94);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.catering-stats div {
+  padding: 18px;
+  text-align: center;
+  color: white;
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.catering-stats div:last-child {
+  border-right: none;
+}
+
+.catering-stats strong {
+  display: block;
+  color: #ff7a29;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.catering-stats span {
+  font-size: 14px;
+}
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+.catering-message {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  z-index: 9999;
+  background: #075c32;
+  color: white;
+  padding: 15px 24px;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  font-weight: 600;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.catering-intro {
+  padding: 80px 20px 30px;
+  text-align: center;
+}
+
+.section-heading span {
+  color: #ff6b1a;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  margin: 12px 0;
+  font-size: clamp(32px, 5vw, 48px);
+  color: #063d24;
+}
+
+.section-heading h2 b {
+  color: #ff6b1a;
+}
+
+.section-heading p {
+  max-width: 700px;
+  margin: auto;
+  color: #647067;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   FILTER
+   ========================================================= */
+
+.catering-filter-section {
+  width: min(1200px, 92%);
+  margin: 30px auto 45px;
+  display: flex;
+  gap: 15px;
+}
+
+.catering-search {
+  flex: 1;
+}
+
+.catering-search input,
+.catering-filter select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 18px;
+  border: 1px solid #d5ded7;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  background: white;
+}
+
+.catering-search input:focus,
+.catering-filter select:focus {
+  border-color: #ff6b1a;
+}
+
+.catering-filter {
+  width: 230px;
+}
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.catering-services {
+  width: min(1200px, 92%);
+  margin: auto;
+}
+
+.catering-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.catering-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e1e8e3;
+  box-shadow: 0 8px 25px rgba(0, 50, 25, 0.07);
+  transition: 0.3s;
+}
+
+.catering-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(0, 50, 25, 0.13);
+}
+
+.catering-image-box {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.catering-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.catering-card:hover .catering-image-box img {
+  transform: scale(1.07);
+}
+
+.catering-category {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  background: #063d24;
+  color: white;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.catering-card-content {
+  padding: 20px;
+}
+
+.catering-card-content h3 {
+  margin: 0 0 10px;
+  color: #073d25;
+  font-size: 21px;
+}
+
+.catering-card-content p {
+  color: #6b756e;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 68px;
+}
+
+.catering-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.catering-price small {
+  display: block;
+  color: #777;
+  font-size: 11px;
+}
+
+.catering-price strong {
+  font-size: 23px;
+  color: #ff6b1a;
+}
+
+.catering-price span {
+  color: #777;
+  font-size: 12px;
+}
+
+.catering-card-bottom button {
+  background: #063d24;
+  color: white;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.catering-card-bottom button:hover {
+  background: #ff6b1a;
+}
+
+.no-catering {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 70px;
+}
+
+/* =========================================================
+   WHY CHOOSE US
+   ========================================================= */
+
+.why-catering {
+  background: #eef5f0;
+  margin-top: 90px;
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.why-catering-grid {
+  width: min(1200px, 100%);
+  margin: 45px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.why-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  border: 1px solid #dde6df;
+  transition: 0.3s;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: #e8f3eb;
+  border-radius: 50%;
+  font-size: 28px;
+}
+
+.why-card h3 {
+  color: #073d25;
+  margin: 15px 0 8px;
+}
+
+.why-card p {
+  color: #68736c;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.catering-cta {
+  width: min(1200px, 92%);
+  margin: 70px auto;
+  background:
+    linear-gradient(
+      120deg,
+      #043d24,
+      #075a35
+    );
+  color: white;
+  border-radius: 18px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.catering-cta span {
+  color: #ff7a29;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.catering-cta h2 {
+  font-size: clamp(28px, 4vw, 46px);
+  margin: 12px 0;
+  line-height: 1.15;
+}
+
+.catering-cta p {
+  color: #dbece1;
+}
+
+.catering-cta button {
+  margin-top: 15px;
+  background: #ff6b1a;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.catering-cta button:hover {
+  background: #e95508;
+}
+
+.cta-food-icon {
+  font-size: 130px;
+  opacity: 0.9;
+}
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+.catering-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.catering-modal {
+  position: relative;
+  background: white;
+  width: min(900px, 100%);
+  max-height: 94vh;
+  overflow-y: auto;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  overflow: hidden;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  z-index: 5;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modal-image {
+  min-height: 550px;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-content {
+  padding: 35px;
+}
+
+.modal-category {
+  color: #ff6b1a;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.modal-content h2 {
+  color: #073d25;
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+.modal-description {
+  color: #6a746d;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #173c29;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.guest-selector {
+  display: flex;
+  width: 100%;
+}
+
+.guest-selector button {
+  width: 45px;
+  border: 1px solid #d6dfd9;
+  background: #eef5f0;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.guest-selector input {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #d6dfd9;
+  font-size: 16px;
+  outline: none;
+}
+
+.food-type-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.food-type-buttons button {
+  flex: 1;
+  padding: 10px;
+  background: white;
+  border: 1px solid #d6dfd9;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.food-type-buttons .food-active {
+  background: #063d24;
+  color: white;
+  border-color: #063d24;
+}
+
+.modal-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #d6dfd9;
+  border-radius: 7px;
+  outline: none;
+}
+
+.modal-input:focus {
+  border-color: #ff6b1a;
+}
+
+.booking-total {
+  margin-top: 25px;
+  padding: 16px;
+  background: #f0f6f1;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-total span {
+  color: #68736c;
+  font-size: 13px;
+}
+
+.booking-total strong {
+  color: #ff6b1a;
+  font-size: 25px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-cancel,
+.modal-confirm {
+  flex: 1;
+  padding: 13px;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal-cancel {
+  background: #eee;
+  border: none;
+}
+
+.modal-confirm {
+  background: #ff6b1a;
+  color: white;
+  border: none;
+}
+
+.modal-confirm:hover {
+  background: #e95508;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .catering-hero {
+    min-height: 650px;
+  }
+
+  .catering-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-catering-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catering-modal {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-image {
+    height: 230px;
+    min-height: auto;
+  }
+
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .catering-hero {
+    min-height: 720px;
+  }
+
+  .catering-hero-content {
+    padding: 80px 0 180px;
+  }
+
+  .catering-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .catering-hero-content p {
+    font-size: 15px;
+  }
+
+  .catering-stats {
+    grid-template-columns: repeat(2, 1fr);
+    bottom: 15px;
+  }
+
+  .catering-stats div {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .catering-filter-section {
+    flex-direction: column;
+  }
+
+  .catering-filter {
+    width: 100%;
+  }
+
+  .catering-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catering-image-box {
+    height: 230px;
+  }
+
+  .why-catering {
+    padding: 60px 20px;
+  }
+
+  .why-catering-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catering-cta {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 20px;
+  }
+
+  .cta-food-icon {
+    font-size: 80px;
+    margin-top: 20px;
+  }
+
+  .catering-modal-overlay {
+    padding: 10px;
+  }
+
+  .modal-content {
+    padding: 25px 20px;
+  }
+
+  .modal-content h2 {
+    font-size: 24px;
+  }
+
+  .food-type-buttons {
+    flex-direction: column;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   MOBILE BOOKING MODAL FIX
+========================================================= */
+
+.catering-modal-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+
+  background: rgba(0, 0, 0, 0.72);
+
+  z-index: 99999;
+
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+/* MAIN MODAL */
+
+.catering-modal {
+  position: relative;
+
+  width: min(900px, 100%);
+  max-width: 900px;
+
+  max-height: calc(100dvh - 40px);
+
+  margin: auto;
+
+  display: flex;
+
+  background: #ffffff;
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+}
+
+
+/* MODAL IMAGE */
+
+.catering-modal .modal-image {
+  width: 42%;
+  min-width: 320px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+}
+
+.catering-modal .modal-image img {
+  width: 100%;
+  height: 100%;
+
+  min-height: 520px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* MODAL CONTENT */
+
+.catering-modal .modal-content {
+  width: 58%;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  overflow-y: auto;
+
+  max-height: calc(100dvh - 40px);
+
+  -webkit-overflow-scrolling: touch;
+}
+
+
+/* CLOSE BUTTON */
+
+.catering-modal .modal-close {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* MODAL INPUTS */
+
+.catering-modal .modal-input {
+  width: 100%;
+
+  min-height: 48px;
+
+  padding: 12px 14px;
+
+  margin-bottom: 16px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  box-sizing: border-box;
+
+  font-size: 15px;
+}
+
+
+/* GUEST SELECTOR */
+
+.guest-selector {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+.guest-selector button {
+  width: 45px;
+  height: 45px;
+
+  flex-shrink: 0;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #f2a900;
+
+  color: #fff;
+
+  font-size: 24px;
+
+  cursor: pointer;
+}
+
+.guest-selector input {
+  flex: 1;
+
+  min-width: 0;
+
+  height: 45px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  text-align: center;
+
+  font-size: 17px;
+
+  box-sizing: border-box;
+}
+
+
+/* FOOD TYPE */
+
+.food-type-buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+.food-type-buttons button {
+  flex: 1;
+
+  min-width: 90px;
+
+  min-height: 44px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background: #fff;
+
+  cursor: pointer;
+}
+
+.food-type-buttons .food-active {
+  background: #f2a900;
+  color: #fff;
+
+  border-color: #f2a900;
+}
+
+
+/* TOTAL */
+
+.booking-total {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 20px;
+  padding: 16px;
+
+  border-radius: 12px;
+
+  background: #f7f7f7;
+
+  box-sizing: border-box;
+}
+
+.booking-total strong {
+  font-size: 22px;
+
+  white-space: nowrap;
+}
+
+
+/* BUTTONS */
+
+.catering-modal .modal-actions {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 18px;
+}
+
+.catering-modal .modal-actions button {
+  flex: 1;
+
+  min-height: 48px;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .catering-modal-overlay {
+    align-items: flex-start;
+
+    padding: 15px;
+
+    overflow-y: auto;
+  }
+
+  .catering-modal {
+    width: 100%;
+
+    max-width: 600px;
+
+    max-height: calc(100dvh - 30px);
+
+    margin: auto;
+
+    flex-direction: column;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+  }
+
+  .catering-modal .modal-image {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 180px;
+
+    flex-shrink: 0;
+  }
+
+  .catering-modal .modal-image img {
+    width: 100%;
+    height: 180px;
+
+    min-height: 0;
+
+    object-fit: cover;
+  }
+
+  .catering-modal .modal-content {
+    width: 100%;
+
+    padding: 22px;
+
+    max-height: calc(100dvh - 210px);
+
+    overflow-y: auto;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .catering-modal-overlay {
+    padding: 8px;
+
+    align-items: flex-start;
+  }
+
+  .catering-modal {
+    width: 100%;
+
+    max-height: calc(100dvh - 16px);
+
+    border-radius: 16px;
+  }
+
+  .catering-modal .modal-image {
+    height: 135px;
+  }
+
+  .catering-modal .modal-image img {
+    height: 135px;
+  }
+
+  .catering-modal .modal-content {
+    padding: 18px 15px;
+
+    max-height: calc(100dvh - 151px);
+  }
+
+  .catering-modal .modal-close {
+    top: 9px;
+    right: 9px;
+
+    width: 36px;
+    height: 36px;
+
+    font-size: 25px;
+  }
+
+  .catering-modal .modal-category {
+    font-size: 12px;
+  }
+
+  .catering-modal .modal-content h2 {
+    font-size: 21px;
+
+    line-height: 1.25;
+
+    margin: 7px 0;
+  }
+
+  .catering-modal .modal-description {
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+  }
+
+  .catering-modal .modal-content label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .guest-selector {
+    gap: 7px;
+  }
+
+  .guest-selector button {
+    width: 42px;
+    height: 42px;
+  }
+
+  .guest-selector input {
+    height: 42px;
+  }
+
+  .food-type-buttons {
+    gap: 7px;
+  }
+
+  .food-type-buttons button {
+    min-width: 0;
+
+    padding: 8px 5px;
+
+    font-size: 12px;
+  }
+
+  .catering-modal .modal-input {
+    min-height: 44px;
+
+    padding: 10px 12px;
+
+    font-size: 14px;
+
+    margin-bottom: 13px;
+  }
+
+  .booking-total {
+    margin-top: 14px;
+
+    padding: 12px;
+
+    font-size: 13px;
+  }
+
+  .booking-total strong {
+    font-size: 18px;
+  }
+
+  .catering-modal .modal-actions {
+    gap: 8px;
+
+    margin-top: 14px;
+  }
+
+  .catering-modal .modal-actions button {
+    min-height: 44px;
+
+    font-size: 13px;
+  }
+
+}
