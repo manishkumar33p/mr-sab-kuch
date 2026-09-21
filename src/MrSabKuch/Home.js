@@ -1890,7 +1890,7 @@ export default function MrSabKuchHome() {
           <div className="footer-brand">
 
             <img
-              src="/niss-logo.png"
+              src={logo30}
               alt="NISS Technology"
               className="footer-niss-logo"
             />
