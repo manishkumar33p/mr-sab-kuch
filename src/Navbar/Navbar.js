@@ -298,11 +298,21 @@ const Navbar = () => {
           className="nav__logo"
           onClick={closeMenu}
         >
-          <img
+          {/* <img
             src={logo30}
             alt="Mr. Sab Kuch - NISS Technology"
             className="nav__logo-img"
-          />
+          /> */}
+
+          <img
+  src={logo30}
+  alt="NISS Technology"
+  style={{
+    width: "100px",
+    height: "50px",
+    objectFit: "contain"
+  }}
+/>
         </NavLink>
 
         {/* ================= LOCATION ================= */}
