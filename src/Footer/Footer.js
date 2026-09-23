@@ -194,7 +194,7 @@ const Footer = () => {
 
             <span>
               <small>Email</small>
-              technologiesniss@gmail.com
+             info@nisstechnology.com
             </span>
              <span>
               <small>Email</small>
