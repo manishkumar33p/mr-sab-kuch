@@ -12,7 +12,7 @@ export const defaultCMS = {
     heroText: "Home services, security, interior, property, shopping, catering, laundry, events and digital solutions — one connected platform.",
     whatsapp: "919958424916",
     phone: "+91 9958424916",
-    email: "technologiesniss@gmail.com",
+    email: "info@nisstechnology.com",
     address: "Ground Floor, 122A, New Gandhi Nagar, Ghaziabad, Uttar Pradesh 201001",
     website: "https://www.nisstechnology.com/"
   },
